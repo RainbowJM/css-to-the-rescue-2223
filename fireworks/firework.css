@@ -10,9 +10,15 @@
     --second-green: #C0E18E;
     --third-green: #C0E18E;
     --last-green: #C0E18E;
-    --text-black: white;
-
-
+    --black: rgb(52, 52, 52);
+    --text-white: white;
+    --pink: deeppink;
+    --orange: orange;
+    --purple: purple;
+    --blue: blue;
+    --yellow: yellow;
+    --red: red;
+    --green: green;
 }
 
 body {
@@ -25,6 +31,7 @@ body {
 
 header {
     place-self: center;
+    height: 3em;
 }
 
 header h1 {
@@ -78,7 +85,7 @@ section {
     scroll-snap-align: center;
     block-size: 90vmin;
     aspect-ratio: 1;
-    background-color: var(--base-green);
+    background-color: var(--black);
 }
 
 section:nth-of-type(1)>div {
@@ -146,6 +153,7 @@ section:nth-of-type(1) div div:nth-of-type(2) {
 
     100% {
         transform: translateX(200%);
+        /* transform: translateX(200%) rotate(45deg); */
     }
 }
 
@@ -265,426 +273,316 @@ section:nth-of-type(2) div {
     animation-name: change;
     animation-duration: 1s;
     animation-play-state: running;
-    animation-iteration-count: infinite ;
+    animation-iteration-count: infinite;
     /* transition: 1s transform; */
 }
 
 @keyframes change {
-    25% {
-        background-color: black;
+    50% {
+        background-color: var(--green);
         box-shadow:
-            -8em -10em 0 black,
-            -6em -10em 0 orange,
-            -4em -10em 0 orange,
-            4em -10em 0 orange,
-            6em -10em 0 orange,
-            8em -10em 0 orange,
+            -8em -10em 0 var(--pink),
+            -6em -10em 0 var(--pink),
+            -4em -10em 0 var(--pink),
+            4em -10em 0 var(--pink),
+            6em -10em 0 var(--pink),
+            8em -10em 0 var(--pink),
 
-            -10em -8em 0 deeppink,
-            -8em -8em 0 deeppink,
-            -6em -8em 0 deeppink,
-            -4em -8em 0 deeppink,
-            -2em -8em 0 deeppink,
-            2em -8em 0 deeppink,
-            4em -8em 0 deeppink,
-            6em -8em 0 deeppink,
-            8em -8em 0 deeppink,
-            10em -8em 0 deeppink,
+            -10em -8em 0 var(--purple),
+            -8em -8em 0 var(--purple),
+            -6em -8em 0 var(--purple),
+            -4em -8em 0 var(--purple),
+            -2em -8em 0 var(--purple),
+            2em -8em 0 var(--purple),
+            4em -8em 0 var(--purple),
+            6em -8em 0 var(--purple),
+            8em -8em 0 var(--purple),
+            10em -8em 0 var(--purple),
 
-            -12em -6em 0 purple,
-            -10em -6em 0 purple,
-            -8em -6em 0 purple,
-            -6em -6em 0 purple,
-            -4em -6em 0 purple,
-            -2em -6em 0 purple,
-            0 -6em 0 purple,
-            2em -6em 0 purple,
-            4em -6em 0 purple,
-            6em -6em 0 purple,
-            8em -6em 0 purple,
-            10em -6em 0 purple,
-            12em -6em 0 purple,
+            -12em -6em 0 var(--blue),
+            -10em -6em 0 var(--blue),
+            -8em -6em 0 var(--blue),
+            -6em -6em 0 var(--blue),
+            -4em -6em 0 var(--blue),
+            -2em -6em 0 var(--blue),
+            0 -6em 0 var(--blue),
+            2em -6em 0 var(--blue),
+            4em -6em 0 var(--blue),
+            6em -6em 0 var(--blue),
+            8em -6em 0 var(--blue),
+            10em -6em 0 var(--blue),
+            12em -6em 0 var(--blue),
 
-            -12em -4em 0 blue,
-            -10em -4em 0 blue,
-            -8em -4em 0 blue,
-            -6em -4em 0 blue,
-            -4em -4em 0 blue,
-            -2em -4em 0 blue,
-            0 -4em 0 blue,
-            2em -4em 0 blue,
-            4em -4em 0 blue,
-            6em -4em 0 blue,
-            8em -4em 0 blue,
-            10em -4em 0 blue,
-            12em -4em 0 blue,
+            -12em -4em 0 var(--yellow),
+            -10em -4em 0 var(--yellow),
+            -8em -4em 0 var(--yellow),
+            -6em -4em 0 var(--yellow),
+            -4em -4em 0 var(--yellow),
+            -2em -4em 0 var(--yellow),
+            0 -4em 0 var(--yellow),
+            2em -4em 0 var(--yellow),
+            4em -4em 0 var(--yellow),
+            6em -4em 0 var(--yellow),
+            8em -4em 0 var(--yellow),
+            10em -4em 0 var(--yellow),
+            12em -4em 0 var(--yellow),
 
-            -12em -2em 0 yellow,
-            -10em -2em 0 yellow,
-            -8em -2em 0 yellow,
-            -6em -2em 0 yellow,
-            -4em -2em 0 yellow,
-            -2em -2em 0 yellow,
-            0 -2em 0 yellow,
-            2em -2em 0 yellow,
-            4em -2em 0 yellow,
-            6em -2em 0 yellow,
-            8em -2em 0 yellow,
-            10em -2em 0 yellow,
-            12em -2em 0 yellow,
+            -12em -2em 0 var(--red),
+            -10em -2em 0 var(--red),
+            -8em -2em 0 var(--red),
+            -6em -2em 0 var(--red),
+            -4em -2em 0 var(--red),
+            -2em -2em 0 var(--red),
+            0 -2em 0 var(--red),
+            2em -2em 0 var(--red),
+            4em -2em 0 var(--red),
+            6em -2em 0 var(--red),
+            8em -2em 0 var(--red),
+            10em -2em 0 var(--red),
+            12em -2em 0 var(--red),
 
-            -10em 0 0 red,
-            -8em 0 0 red,
-            -6em 0 0 red,
-            -4em 0 0 red,
-            -2em 0 0 black,
-            0 0 0 red,
-            2em 0 0 red,
-            4em 0 0 red,
-            6em 0 0 red,
-            8em 0 0 red,
-            10em 0 0 red,
+            -10em 0 0 var(--green),
+            -8em 0 0 var(--green),
+            -6em 0 0 var(--green),
+            -4em 0 0 var(--green),
+            -2em 0 0 var(--green),
+            0 0 0 var(--green),
+            2em 0 0 var(--green),
+            4em 0 0 var(--green),
+            6em 0 0 var(--green),
+            8em 0 0 var(--green),
+            10em 0 0 var(--green),
 
-            -8em 2em 0 green,
-            -6em 2em 0 green,
-            -4em 2em 0 green,
-            -2em 2em 0 green,
-            0 2em 0 green,
-            2em 2em 0 green,
-            4em 2em 0 green,
-            6em 2em 0 green,
-            8em 2em 0 green,
+            -8em 2em 0 var(--orange),
+            -6em 2em 0 var(--orange),
+            -4em 2em 0 var(--orange),
+            -2em 2em 0 var(--orange),
+            0 2em 0 var(--orange),
+            2em 2em 0 var(--orange),
+            4em 2em 0 var(--orange),
+            6em 2em 0 var(--orange),
+            8em 2em 0 var(--orange),
 
-            -6em 4em 0 orange,
-            -4em 4em 0 orange,
-            -2em 4em 0 orange,
-            0 4em 0 orange,
-            2em 4em 0 orange,
-            4em 4em 0 orange,
-            6em 4em 0 orange,
+            -6em 4em 0 var(--pink),
+            -4em 4em 0 var(--pink),
+            -2em 4em 0 var(--pink),
+            0 4em 0 var(--pink),
+            2em 4em 0 var(--pink),
+            4em 4em 0 var(--pink),
+            6em 4em 0 var(--pink),
 
-            -4em 6em 0 deeppink,
-            -2em 6em 0 deeppink,
-            0 6em 0 deeppink,
-            2em 6em 0 deeppink,
-            4em 6em 0 deeppink,
+            -4em 6em 0 var(--purple),
+            -2em 6em 0 var(--purple),
+            0 6em 0 var(--purple),
+            2em 6em 0 var(--purple),
+            4em 6em 0 var(--purple),
 
-            -2em 8em 0 purple,
-            0 8em 0 purple,
-            2em 8em 0 purple,
+            -2em 8em 0 var(--blue),
+            0 8em 0 var(--blue),
+            2em 8em 0 var(--blue),
 
-            0 10em 0 blue;
+            0 10em 0 var(--yellow);
     }
-    50%{
+
+    100% {
+        background-color: var(--orange);
         box-shadow:
-        -8em -10em 0 black,
-        -6em -10em 0 orange,
-        -4em -10em 0 orange,
-        4em -10em 0 orange,
-        6em -10em 0 orange,
-        8em -10em 0 orange,
+            -8em -10em 0 var(--purple),
+            -6em -10em 0 var(--purple),
+            -4em -10em 0 var(--purple),
+            4em -10em 0 var(--purple),
+            6em -10em 0 var(--purple),
+            8em -10em 0 var(--purple),
 
-        -10em -8em 0 deeppink,
-        -8em -8em 0 deeppink,
-        -6em -8em 0 deeppink,
-        -4em -8em 0 deeppink,
-        -2em -8em 0 deeppink,
-        2em -8em 0 deeppink,
-        4em -8em 0 deeppink,
-        6em -8em 0 deeppink,
-        8em -8em 0 deeppink,
-        10em -8em 0 deeppink,
+            -10em -8em 0 var(--blue),
+            -8em -8em 0 var(--blue),
+            -6em -8em 0 var(--blue),
+            -4em -8em 0 var(--blue),
+            -2em -8em 0 var(--blue),
+            2em -8em 0 var(--blue),
+            4em -8em 0 var(--blue),
+            6em -8em 0 var(--blue),
+            8em -8em 0 var(--blue),
+            10em -8em 0 var(--blue),
 
-        -12em -6em 0 purple,
-        -10em -6em 0 purple,
-        -8em -6em 0 purple,
-        -6em -6em 0 purple,
-        -4em -6em 0 purple,
-        -2em -6em 0 purple,
-        0 -6em 0 purple,
-        2em -6em 0 purple,
-        4em -6em 0 purple,
-        6em -6em 0 purple,
-        8em -6em 0 purple,
-        10em -6em 0 purple,
-        12em -6em 0 purple,
+            -12em -6em 0 var(--yellow),
+            -10em -6em 0 var(--yellow),
+            -8em -6em 0 var(--yellow),
+            -6em -6em 0 var(--yellow),
+            -4em -6em 0 var(--yellow),
+            -2em -6em 0 var(--yellow),
+            0 -6em 0 var(--yellow),
+            2em -6em 0 var(--yellow),
+            4em -6em 0 var(--yellow),
+            6em -6em 0 var(--yellow),
+            8em -6em 0 var(--yellow),
+            10em -6em 0 var(--yellow),
+            12em -6em 0 var(--yellow),
 
-        -12em -4em 0 blue,
-        -10em -4em 0 blue,
-        -8em -4em 0 blue,
-        -6em -4em 0 blue,
-        -4em -4em 0 blue,
-        -2em -4em 0 blue,
-        0 -4em 0 blue,
-        2em -4em 0 blue,
-        4em -4em 0 blue,
-        6em -4em 0 blue,
-        8em -4em 0 blue,
-        10em -4em 0 blue,
-        12em -4em 0 blue,
+            -12em -4em 0 var(--red),
+            -10em -4em 0 var(--red),
+            -8em -4em 0 var(--red),
+            -6em -4em 0 var(--red),
+            -4em -4em 0 var(--red),
+            -2em -4em 0 var(--red),
+            0 -4em 0 var(--red),
+            2em -4em 0 var(--red),
+            4em -4em 0 var(--red),
+            6em -4em 0 var(--red),
+            8em -4em 0 var(--red),
+            10em -4em 0 var(--red),
+            12em -4em 0 var(--red),
 
-        -12em -2em 0 yellow,
-        -10em -2em 0 yellow,
-        -8em -2em 0 yellow,
-        -6em -2em 0 yellow,
-        -4em -2em 0 yellow,
-        -2em -2em 0 yellow,
-        0 -2em 0 yellow,
-        2em -2em 0 yellow,
-        4em -2em 0 yellow,
-        6em -2em 0 yellow,
-        8em -2em 0 yellow,
-        10em -2em 0 yellow,
-        12em -2em 0 yellow,
+            -12em -2em 0 var(--green),
+            -10em -2em 0 var(--green),
+            -8em -2em 0 var(--green),
+            -6em -2em 0 var(--green),
+            -4em -2em 0 var(--green),
+            -2em -2em 0 var(--green),
+            0 -2em 0 var(--green),
+            2em -2em 0 var(--green),
+            4em -2em 0 var(--green),
+            6em -2em 0 var(--green),
+            8em -2em 0 var(--green),
+            10em -2em 0 var(--green),
+            12em -2em 0 var(--green),
 
-        -10em 0 0 red,
-        -8em 0 0 red,
-        -6em 0 0 red,
-        -4em 0 0 red,
-        -2em 0 0 red,
-        0 0 0 red,
-        2em 0 0 red,
-        4em 0 0 red,
-        6em 0 0 red,
-        8em 0 0 red,
-        10em 0 0 red,
+            -10em 0 0 var(--orange),
+            -8em 0 0 var(--orange),
+            -6em 0 0 var(--orange),
+            -4em 0 0 var(--orange),
+            -2em 0 0 var(--orange),
+            0 0 0 var(--orange),
+            2em 0 0 var(--orange),
+            4em 0 0 var(--orange),
+            6em 0 0 var(--orange),
+            8em 0 0 var(--orange),
+            10em 0 0 var(--orange),
 
-        -8em 2em 0 green,
-        -6em 2em 0 green,
-        -4em 2em 0 green,
-        -2em 2em 0 green,
-        0 2em 0 green,
-        2em 2em 0 green,
-        4em 2em 0 green,
-        6em 2em 0 green,
-        8em 2em 0 green,
+            -8em 2em 0 var(--pink),
+            -6em 2em 0 var(--pink),
+            -4em 2em 0 var(--pink),
+            -2em 2em 0 var(--pink),
+            0 2em 0 var(--pink),
+            2em 2em 0 var(--pink),
+            4em 2em 0 var(--pink),
+            6em 2em 0 var(--pink),
+            8em 2em 0 var(--pink),
 
-        -6em 4em 0 orange,
-        -4em 4em 0 orange,
-        -2em 4em 0 orange,
-        0 4em 0 orange,
-        2em 4em 0 orange,
-        4em 4em 0 orange,
-        6em 4em 0 orange,
+            -6em 4em 0 var(--purple),
+            -4em 4em 0 var(--purple),
+            -2em 4em 0 var(--purple),
+            0 4em 0 var(--purple),
+            2em 4em 0 var(--purple),
+            4em 4em 0 var(--purple),
+            6em 4em 0 var(--purple),
 
-        -4em 6em 0 deeppink,
-        -2em 6em 0 deeppink,
-        0 6em 0 deeppink,
-        2em 6em 0 deeppink,
-        4em 6em 0 deeppink,
+            -4em 6em 0 var(--blue),
+            -2em 6em 0 var(--blue),
+            0 6em 0 var(--blue),
+            2em 6em 0 var(--blue),
+            4em 6em 0 var(--blue),
 
-        -2em 8em 0 purple,
-        0 8em 0 purple,
-        2em 8em 0 purple,
+            -2em 8em 0 var(--yellow),
+            0 8em 0 var(--yellow),
+            2em 8em 0 var(--yellow),
 
-        0 10em 0 blue;
+            0 10em 0 var(--red);
     }
-    75%{
-        box-shadow:
-        -8em -10em 0 black,
-        -6em -10em 0 orange,
-        -4em -10em 0 orange,
-        4em -10em 0 orange,
-        6em -10em 0 orange,
-        8em -10em 0 orange,
+}
 
-        -10em -8em 0 deeppink,
-        -8em -8em 0 deeppink,
-        -6em -8em 0 deeppink,
-        -4em -8em 0 deeppink,
-        -2em -8em 0 deeppink,
-        2em -8em 0 deeppink,
-        4em -8em 0 deeppink,
-        6em -8em 0 deeppink,
-        8em -8em 0 deeppink,
-        10em -8em 0 deeppink,
+section:nth-of-type(3) div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-        -12em -6em 0 purple,
-        -10em -6em 0 purple,
-        -8em -6em 0 purple,
-        -6em -6em 0 purple,
-        -4em -6em 0 purple,
-        -2em -6em 0 purple,
-        0 -6em 0 purple,
-        2em -6em 0 purple,
-        4em -6em 0 purple,
-        6em -6em 0 purple,
-        8em -6em 0 purple,
-        10em -6em 0 purple,
-        12em -6em 0 purple,
+section:nth-of-type(3) div div {
+    width: 10px;
+    height: 20px;
+    background-color: white;
+    animation: firework 1.5s ease-out infinite;
+    box-shadow:
+        -10em -10em 0 #ff4136,
+        10em -10em 0 #2ecc40,
+        10em 10em 0 #0074d9,
+        -10em 10em 0 #ff851b;
+}
 
-        -12em -4em 0 blue,
-        -10em -4em 0 blue,
-        -8em -4em 0 blue,
-        -6em -4em 0 blue,
-        -4em -4em 0 blue,
-        -2em -4em 0 blue,
-        0 -4em 0 blue,
-        2em -4em 0 blue,
-        4em -4em 0 blue,
-        6em -4em 0 blue,
-        8em -4em 0 blue,
-        10em -4em 0 blue,
-        12em -4em 0 blue,
+section:nth-of-type(3) div div:nth-child(1),
+section:nth-of-type(3) div div:nth-child(7),
+section:nth-of-type(3) div div:nth-child(13),
+section:nth-of-type(3) div div:nth-child(19),
+section:nth-of-type(3) div div:nth-child(25) {
+    transform: rotate(45deg);
+    background-color: #ff4136;
+    box-shadow:
+        -6em -6em 0 #ff4136,
+        6em -6em 0 #2ecc40,
+        6em 6em 0 #0074d9,
+        -6em 6em 0 #ff851b;
+}
 
-        -12em -2em 0 yellow,
-        -10em -2em 0 yellow,
-        -8em -2em 0 yellow,
-        -6em -2em 0 yellow,
-        -4em -2em 0 yellow,
-        -2em -2em 0 yellow,
-        0 -2em 0 yellow,
-        2em -2em 0 yellow,
-        4em -2em 0 yellow,
-        6em -2em 0 yellow,
-        8em -2em 0 yellow,
-        10em -2em 0 yellow,
-        12em -2em 0 yellow,
+section:nth-of-type(3) div div:nth-child(2),
+section:nth-of-type(3) div div:nth-child(8),
+section:nth-of-type(3) div div:nth-child(14),
+section:nth-of-type(3) div div:nth-child(20),
+section:nth-of-type(3) div div:nth-child(26) {
+    transform: rotate(-45deg);
+    background-color: #2ecc40;
+}
 
-        -10em 0 0 red,
-        -8em 0 0 red,
-        -6em 0 0 red,
-        -4em 0 0 red,
-        -2em 0 0 red,
-        0 0 0 red,
-        2em 0 0 red,
-        4em 0 0 red,
-        6em 0 0 red,
-        8em 0 0 red,
-        10em 0 0 red,
+section:nth-of-type(3) div div:nth-child(3),
+section:nth-of-type(3) div div:nth-child(9),
+section:nth-of-type(3) div div:nth-child(15),
+section:nth-of-type(3) div div:nth-child(21),
+section:nth-of-type(3) div div:nth-child(27) {
+    transform: rotate(90deg);
+    background-color: #0074d9;
+}
 
-        -8em 2em 0 green,
-        -6em 2em 0 green,
-        -4em 2em 0 green,
-        -2em 2em 0 green,
-        0 2em 0 green,
-        2em 2em 0 green,
-        4em 2em 0 green,
-        6em 2em 0 green,
-        8em 2em 0 green,
+section:nth-of-type(3) div div:nth-child(4),
+section:nth-of-type(3) div div:nth-child(10),
+section:nth-of-type(3) div div:nth-child(16),
+section:nth-of-type(3) div div:nth-child(22),
+section:nth-of-type(3) div div:nth-child(28) {
+    transform: rotate(135deg);
+    background-color: #ffdc00;
+}
 
-        -6em 4em 0 orange,
-        -4em 4em 0 orange,
-        -2em 4em 0 orange,
-        0 4em 0 orange,
-        2em 4em 0 orange,
-        4em 4em 0 orange,
-        6em 4em 0 orange,
+section:nth-of-type(3) div div:nth-child(5),
+section:nth-of-type(3) div div:nth-child(11),
+section:nth-of-type(3) div div:nth-child(17),
+section:nth-of-type(3) div div:nth-child(23),
+section:nth-of-type(3) div div:nth-child(29) {
+    transform: rotate(-135deg);
+    background-color: #b10dc9;
+}
 
-        -4em 6em 0 deeppink,
-        -2em 6em 0 deeppink,
-        0 6em 0 deeppink,
-        2em 6em 0 deeppink,
-        4em 6em 0 deeppink,
+section:nth-of-type(3) div div:nth-child(6),
+section:nth-of-type(3) div div:nth-child(12),
+section:nth-of-type(3) div div:nth-child(18),
+section:nth-of-type(3) div div:nth-child(24),
+section:nth-of-type(3) div div:nth-child(30) {
+    transform: rotate(-90deg);
+    background-color: #3d9970;
+}
 
-        -2em 8em 0 purple,
-        0 8em 0 purple,
-        2em 8em 0 purple,
-
-        0 10em 0 blue;
+@keyframes firework {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
     }
-    100%{
-        box-shadow:
-        -8em -10em 0 black,
-        -6em -10em 0 orange,
-        -4em -10em 0 orange,
-        4em -10em 0 orange,
-        6em -10em 0 orange,
-        8em -10em 0 orange,
 
-        -10em -8em 0 deeppink,
-        -8em -8em 0 deeppink,
-        -6em -8em 0 deeppink,
-        -4em -8em 0 deeppink,
-        -2em -8em 0 deeppink,
-        2em -8em 0 deeppink,
-        4em -8em 0 deeppink,
-        6em -8em 0 deeppink,
-        8em -8em 0 deeppink,
-        10em -8em 0 deeppink,
+    50% {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
 
-        -12em -6em 0 purple,
-        -10em -6em 0 purple,
-        -8em -6em 0 purple,
-        -6em -6em 0 purple,
-        -4em -6em 0 purple,
-        -2em -6em 0 purple,
-        0 -6em 0 purple,
-        2em -6em 0 purple,
-        4em -6em 0 purple,
-        6em -6em 0 purple,
-        8em -6em 0 purple,
-        10em -6em 0 purple,
-        12em -6em 0 purple,
-
-        -12em -4em 0 blue,
-        -10em -4em 0 blue,
-        -8em -4em 0 blue,
-        -6em -4em 0 blue,
-        -4em -4em 0 blue,
-        -2em -4em 0 blue,
-        0 -4em 0 blue,
-        2em -4em 0 blue,
-        4em -4em 0 blue,
-        6em -4em 0 blue,
-        8em -4em 0 blue,
-        10em -4em 0 blue,
-        12em -4em 0 blue,
-
-        -12em -2em 0 yellow,
-        -10em -2em 0 yellow,
-        -8em -2em 0 yellow,
-        -6em -2em 0 yellow,
-        -4em -2em 0 yellow,
-        -2em -2em 0 yellow,
-        0 -2em 0 yellow,
-        2em -2em 0 yellow,
-        4em -2em 0 yellow,
-        6em -2em 0 yellow,
-        8em -2em 0 yellow,
-        10em -2em 0 yellow,
-        12em -2em 0 yellow,
-
-        -10em 0 0 red,
-        -8em 0 0 red,
-        -6em 0 0 red,
-        -4em 0 0 red,
-        -2em 0 0 red,
-        0 0 0 red,
-        2em 0 0 red,
-        4em 0 0 red,
-        6em 0 0 red,
-        8em 0 0 red,
-        10em 0 0 red,
-
-        -8em 2em 0 green,
-        -6em 2em 0 green,
-        -4em 2em 0 green,
-        -2em 2em 0 green,
-        0 2em 0 green,
-        2em 2em 0 green,
-        4em 2em 0 green,
-        6em 2em 0 green,
-        8em 2em 0 green,
-
-        -6em 4em 0 orange,
-        -4em 4em 0 orange,
-        -2em 4em 0 orange,
-        0 4em 0 orange,
-        2em 4em 0 orange,
-        4em 4em 0 orange,
-        6em 4em 0 orange,
-
-        -4em 6em 0 deeppink,
-        -2em 6em 0 deeppink,
-        0 6em 0 deeppink,
-        2em 6em 0 deeppink,
-        4em 6em 0 deeppink,
-
-        -2em 8em 0 purple,
-        0 8em 0 purple,
-        2em 8em 0 --text-black,
-
-        0 10em 0 --text-black;
+    100% {
+        opacity: 0;
+        transform: translateY(0);
     }
 }
