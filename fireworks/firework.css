@@ -1,0 +1,690 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --base-green: #E4FAC3;
+    --first-green: #C0E18E;
+    --second-green: #C0E18E;
+    --third-green: #C0E18E;
+    --last-green: #C0E18E;
+    --text-black: white;
+
+
+}
+
+body {
+    background-color: var(--last-green);
+    display: grid;
+    place-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header {
+    place-self: center;
+}
+
+header h1 {
+    animation-name: color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color {
+    0% {
+        color: #52006A;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    25% {
+        color: #CD113B;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    50% {
+        color: #FF7600;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    75% {
+        color: #FFA900;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    100% {
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+main {
+    height: 100vh;
+    height: 100dvh;
+    scroll-snap-type: x mandatory;
+    place-self: center;
+    display: flex;
+    overflow-x: auto;
+    gap: 2em;
+    width: 95%;
+}
+
+section {
+    display: grid;
+    place-content: center;
+    scroll-snap-align: center;
+    block-size: 90vmin;
+    aspect-ratio: 1;
+    background-color: var(--base-green);
+}
+
+section:nth-of-type(1)>div {
+    position: relative;
+    width: 4em;
+    aspect-ratio: 1;
+
+    background-color: green;
+
+    animation-name: omhoog;
+    animation-duration: 2s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes omhoog {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-200%);
+    }
+}
+
+
+section:nth-of-type(1) div div {
+    position: absolute;
+    inset: 0;
+
+    background-color: red;
+}
+
+section:nth-of-type(1) div div:nth-of-type(1) {
+    animation-name: links;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+}
+
+section:nth-of-type(1) div div:nth-of-type(2) {
+    animation-name: rechts;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+}
+
+@keyframes links {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+@keyframes rechts {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(200%);
+    }
+}
+
+main:hover section:nth-of-type(1) div div,
+main:hover section:nth-of-type(1) div {
+    animation-play-state: running;
+}
+
+section:nth-of-type(2) div {
+    width: 2em;
+    aspect-ratio: 1/1;
+    background-color: red;
+
+    box-shadow:
+        -8em -10em 0 orange,
+        -6em -10em 0 orange,
+        -4em -10em 0 orange,
+        4em -10em 0 orange,
+        6em -10em 0 orange,
+        8em -10em 0 orange,
+
+        -10em -8em 0 deeppink,
+        -8em -8em 0 deeppink,
+        -6em -8em 0 deeppink,
+        -4em -8em 0 deeppink,
+        -2em -8em 0 deeppink,
+        2em -8em 0 deeppink,
+        4em -8em 0 deeppink,
+        6em -8em 0 deeppink,
+        8em -8em 0 deeppink,
+        10em -8em 0 deeppink,
+
+        -12em -6em 0 purple,
+        -10em -6em 0 purple,
+        -8em -6em 0 purple,
+        -6em -6em 0 purple,
+        -4em -6em 0 purple,
+        -2em -6em 0 purple,
+        0 -6em 0 purple,
+        2em -6em 0 purple,
+        4em -6em 0 purple,
+        6em -6em 0 purple,
+        8em -6em 0 purple,
+        10em -6em 0 purple,
+        12em -6em 0 purple,
+
+        -12em -4em 0 blue,
+        -10em -4em 0 blue,
+        -8em -4em 0 blue,
+        -6em -4em 0 blue,
+        -4em -4em 0 blue,
+        -2em -4em 0 blue,
+        0 -4em 0 blue,
+        2em -4em 0 blue,
+        4em -4em 0 blue,
+        6em -4em 0 blue,
+        8em -4em 0 blue,
+        10em -4em 0 blue,
+        12em -4em 0 blue,
+
+        -12em -2em 0 yellow,
+        -10em -2em 0 yellow,
+        -8em -2em 0 yellow,
+        -6em -2em 0 yellow,
+        -4em -2em 0 yellow,
+        -2em -2em 0 yellow,
+        0 -2em 0 yellow,
+        2em -2em 0 yellow,
+        4em -2em 0 yellow,
+        6em -2em 0 yellow,
+        8em -2em 0 yellow,
+        10em -2em 0 yellow,
+        12em -2em 0 yellow,
+
+        -10em 0 0 red,
+        -8em 0 0 red,
+        -6em 0 0 red,
+        -4em 0 0 red,
+        -2em 0 0 red,
+        0 0 0 red,
+        2em 0 0 red,
+        4em 0 0 red,
+        6em 0 0 red,
+        8em 0 0 red,
+        10em 0 0 red,
+
+        -8em 2em 0 green,
+        -6em 2em 0 green,
+        -4em 2em 0 green,
+        -2em 2em 0 green,
+        0 2em 0 green,
+        2em 2em 0 green,
+        4em 2em 0 green,
+        6em 2em 0 green,
+        8em 2em 0 green,
+
+        -6em 4em 0 orange,
+        -4em 4em 0 orange,
+        -2em 4em 0 orange,
+        0 4em 0 orange,
+        2em 4em 0 orange,
+        4em 4em 0 orange,
+        6em 4em 0 orange,
+
+        -4em 6em 0 deeppink,
+        -2em 6em 0 deeppink,
+        0 6em 0 deeppink,
+        2em 6em 0 deeppink,
+        4em 6em 0 deeppink,
+
+        -2em 8em 0 purple,
+        0 8em 0 purple,
+        2em 8em 0 purple,
+
+        0 10em 0 blue;
+
+    animation-name: change;
+    animation-duration: 1s;
+    animation-play-state: running;
+    animation-iteration-count: infinite ;
+    /* transition: 1s transform; */
+}
+
+@keyframes change {
+    25% {
+        background-color: black;
+        box-shadow:
+            -8em -10em 0 black,
+            -6em -10em 0 orange,
+            -4em -10em 0 orange,
+            4em -10em 0 orange,
+            6em -10em 0 orange,
+            8em -10em 0 orange,
+
+            -10em -8em 0 deeppink,
+            -8em -8em 0 deeppink,
+            -6em -8em 0 deeppink,
+            -4em -8em 0 deeppink,
+            -2em -8em 0 deeppink,
+            2em -8em 0 deeppink,
+            4em -8em 0 deeppink,
+            6em -8em 0 deeppink,
+            8em -8em 0 deeppink,
+            10em -8em 0 deeppink,
+
+            -12em -6em 0 purple,
+            -10em -6em 0 purple,
+            -8em -6em 0 purple,
+            -6em -6em 0 purple,
+            -4em -6em 0 purple,
+            -2em -6em 0 purple,
+            0 -6em 0 purple,
+            2em -6em 0 purple,
+            4em -6em 0 purple,
+            6em -6em 0 purple,
+            8em -6em 0 purple,
+            10em -6em 0 purple,
+            12em -6em 0 purple,
+
+            -12em -4em 0 blue,
+            -10em -4em 0 blue,
+            -8em -4em 0 blue,
+            -6em -4em 0 blue,
+            -4em -4em 0 blue,
+            -2em -4em 0 blue,
+            0 -4em 0 blue,
+            2em -4em 0 blue,
+            4em -4em 0 blue,
+            6em -4em 0 blue,
+            8em -4em 0 blue,
+            10em -4em 0 blue,
+            12em -4em 0 blue,
+
+            -12em -2em 0 yellow,
+            -10em -2em 0 yellow,
+            -8em -2em 0 yellow,
+            -6em -2em 0 yellow,
+            -4em -2em 0 yellow,
+            -2em -2em 0 yellow,
+            0 -2em 0 yellow,
+            2em -2em 0 yellow,
+            4em -2em 0 yellow,
+            6em -2em 0 yellow,
+            8em -2em 0 yellow,
+            10em -2em 0 yellow,
+            12em -2em 0 yellow,
+
+            -10em 0 0 red,
+            -8em 0 0 red,
+            -6em 0 0 red,
+            -4em 0 0 red,
+            -2em 0 0 black,
+            0 0 0 red,
+            2em 0 0 red,
+            4em 0 0 red,
+            6em 0 0 red,
+            8em 0 0 red,
+            10em 0 0 red,
+
+            -8em 2em 0 green,
+            -6em 2em 0 green,
+            -4em 2em 0 green,
+            -2em 2em 0 green,
+            0 2em 0 green,
+            2em 2em 0 green,
+            4em 2em 0 green,
+            6em 2em 0 green,
+            8em 2em 0 green,
+
+            -6em 4em 0 orange,
+            -4em 4em 0 orange,
+            -2em 4em 0 orange,
+            0 4em 0 orange,
+            2em 4em 0 orange,
+            4em 4em 0 orange,
+            6em 4em 0 orange,
+
+            -4em 6em 0 deeppink,
+            -2em 6em 0 deeppink,
+            0 6em 0 deeppink,
+            2em 6em 0 deeppink,
+            4em 6em 0 deeppink,
+
+            -2em 8em 0 purple,
+            0 8em 0 purple,
+            2em 8em 0 purple,
+
+            0 10em 0 blue;
+    }
+    50%{
+        box-shadow:
+        -8em -10em 0 black,
+        -6em -10em 0 orange,
+        -4em -10em 0 orange,
+        4em -10em 0 orange,
+        6em -10em 0 orange,
+        8em -10em 0 orange,
+
+        -10em -8em 0 deeppink,
+        -8em -8em 0 deeppink,
+        -6em -8em 0 deeppink,
+        -4em -8em 0 deeppink,
+        -2em -8em 0 deeppink,
+        2em -8em 0 deeppink,
+        4em -8em 0 deeppink,
+        6em -8em 0 deeppink,
+        8em -8em 0 deeppink,
+        10em -8em 0 deeppink,
+
+        -12em -6em 0 purple,
+        -10em -6em 0 purple,
+        -8em -6em 0 purple,
+        -6em -6em 0 purple,
+        -4em -6em 0 purple,
+        -2em -6em 0 purple,
+        0 -6em 0 purple,
+        2em -6em 0 purple,
+        4em -6em 0 purple,
+        6em -6em 0 purple,
+        8em -6em 0 purple,
+        10em -6em 0 purple,
+        12em -6em 0 purple,
+
+        -12em -4em 0 blue,
+        -10em -4em 0 blue,
+        -8em -4em 0 blue,
+        -6em -4em 0 blue,
+        -4em -4em 0 blue,
+        -2em -4em 0 blue,
+        0 -4em 0 blue,
+        2em -4em 0 blue,
+        4em -4em 0 blue,
+        6em -4em 0 blue,
+        8em -4em 0 blue,
+        10em -4em 0 blue,
+        12em -4em 0 blue,
+
+        -12em -2em 0 yellow,
+        -10em -2em 0 yellow,
+        -8em -2em 0 yellow,
+        -6em -2em 0 yellow,
+        -4em -2em 0 yellow,
+        -2em -2em 0 yellow,
+        0 -2em 0 yellow,
+        2em -2em 0 yellow,
+        4em -2em 0 yellow,
+        6em -2em 0 yellow,
+        8em -2em 0 yellow,
+        10em -2em 0 yellow,
+        12em -2em 0 yellow,
+
+        -10em 0 0 red,
+        -8em 0 0 red,
+        -6em 0 0 red,
+        -4em 0 0 red,
+        -2em 0 0 red,
+        0 0 0 red,
+        2em 0 0 red,
+        4em 0 0 red,
+        6em 0 0 red,
+        8em 0 0 red,
+        10em 0 0 red,
+
+        -8em 2em 0 green,
+        -6em 2em 0 green,
+        -4em 2em 0 green,
+        -2em 2em 0 green,
+        0 2em 0 green,
+        2em 2em 0 green,
+        4em 2em 0 green,
+        6em 2em 0 green,
+        8em 2em 0 green,
+
+        -6em 4em 0 orange,
+        -4em 4em 0 orange,
+        -2em 4em 0 orange,
+        0 4em 0 orange,
+        2em 4em 0 orange,
+        4em 4em 0 orange,
+        6em 4em 0 orange,
+
+        -4em 6em 0 deeppink,
+        -2em 6em 0 deeppink,
+        0 6em 0 deeppink,
+        2em 6em 0 deeppink,
+        4em 6em 0 deeppink,
+
+        -2em 8em 0 purple,
+        0 8em 0 purple,
+        2em 8em 0 purple,
+
+        0 10em 0 blue;
+    }
+    75%{
+        box-shadow:
+        -8em -10em 0 black,
+        -6em -10em 0 orange,
+        -4em -10em 0 orange,
+        4em -10em 0 orange,
+        6em -10em 0 orange,
+        8em -10em 0 orange,
+
+        -10em -8em 0 deeppink,
+        -8em -8em 0 deeppink,
+        -6em -8em 0 deeppink,
+        -4em -8em 0 deeppink,
+        -2em -8em 0 deeppink,
+        2em -8em 0 deeppink,
+        4em -8em 0 deeppink,
+        6em -8em 0 deeppink,
+        8em -8em 0 deeppink,
+        10em -8em 0 deeppink,
+
+        -12em -6em 0 purple,
+        -10em -6em 0 purple,
+        -8em -6em 0 purple,
+        -6em -6em 0 purple,
+        -4em -6em 0 purple,
+        -2em -6em 0 purple,
+        0 -6em 0 purple,
+        2em -6em 0 purple,
+        4em -6em 0 purple,
+        6em -6em 0 purple,
+        8em -6em 0 purple,
+        10em -6em 0 purple,
+        12em -6em 0 purple,
+
+        -12em -4em 0 blue,
+        -10em -4em 0 blue,
+        -8em -4em 0 blue,
+        -6em -4em 0 blue,
+        -4em -4em 0 blue,
+        -2em -4em 0 blue,
+        0 -4em 0 blue,
+        2em -4em 0 blue,
+        4em -4em 0 blue,
+        6em -4em 0 blue,
+        8em -4em 0 blue,
+        10em -4em 0 blue,
+        12em -4em 0 blue,
+
+        -12em -2em 0 yellow,
+        -10em -2em 0 yellow,
+        -8em -2em 0 yellow,
+        -6em -2em 0 yellow,
+        -4em -2em 0 yellow,
+        -2em -2em 0 yellow,
+        0 -2em 0 yellow,
+        2em -2em 0 yellow,
+        4em -2em 0 yellow,
+        6em -2em 0 yellow,
+        8em -2em 0 yellow,
+        10em -2em 0 yellow,
+        12em -2em 0 yellow,
+
+        -10em 0 0 red,
+        -8em 0 0 red,
+        -6em 0 0 red,
+        -4em 0 0 red,
+        -2em 0 0 red,
+        0 0 0 red,
+        2em 0 0 red,
+        4em 0 0 red,
+        6em 0 0 red,
+        8em 0 0 red,
+        10em 0 0 red,
+
+        -8em 2em 0 green,
+        -6em 2em 0 green,
+        -4em 2em 0 green,
+        -2em 2em 0 green,
+        0 2em 0 green,
+        2em 2em 0 green,
+        4em 2em 0 green,
+        6em 2em 0 green,
+        8em 2em 0 green,
+
+        -6em 4em 0 orange,
+        -4em 4em 0 orange,
+        -2em 4em 0 orange,
+        0 4em 0 orange,
+        2em 4em 0 orange,
+        4em 4em 0 orange,
+        6em 4em 0 orange,
+
+        -4em 6em 0 deeppink,
+        -2em 6em 0 deeppink,
+        0 6em 0 deeppink,
+        2em 6em 0 deeppink,
+        4em 6em 0 deeppink,
+
+        -2em 8em 0 purple,
+        0 8em 0 purple,
+        2em 8em 0 purple,
+
+        0 10em 0 blue;
+    }
+    100%{
+        box-shadow:
+        -8em -10em 0 black,
+        -6em -10em 0 orange,
+        -4em -10em 0 orange,
+        4em -10em 0 orange,
+        6em -10em 0 orange,
+        8em -10em 0 orange,
+
+        -10em -8em 0 deeppink,
+        -8em -8em 0 deeppink,
+        -6em -8em 0 deeppink,
+        -4em -8em 0 deeppink,
+        -2em -8em 0 deeppink,
+        2em -8em 0 deeppink,
+        4em -8em 0 deeppink,
+        6em -8em 0 deeppink,
+        8em -8em 0 deeppink,
+        10em -8em 0 deeppink,
+
+        -12em -6em 0 purple,
+        -10em -6em 0 purple,
+        -8em -6em 0 purple,
+        -6em -6em 0 purple,
+        -4em -6em 0 purple,
+        -2em -6em 0 purple,
+        0 -6em 0 purple,
+        2em -6em 0 purple,
+        4em -6em 0 purple,
+        6em -6em 0 purple,
+        8em -6em 0 purple,
+        10em -6em 0 purple,
+        12em -6em 0 purple,
+
+        -12em -4em 0 blue,
+        -10em -4em 0 blue,
+        -8em -4em 0 blue,
+        -6em -4em 0 blue,
+        -4em -4em 0 blue,
+        -2em -4em 0 blue,
+        0 -4em 0 blue,
+        2em -4em 0 blue,
+        4em -4em 0 blue,
+        6em -4em 0 blue,
+        8em -4em 0 blue,
+        10em -4em 0 blue,
+        12em -4em 0 blue,
+
+        -12em -2em 0 yellow,
+        -10em -2em 0 yellow,
+        -8em -2em 0 yellow,
+        -6em -2em 0 yellow,
+        -4em -2em 0 yellow,
+        -2em -2em 0 yellow,
+        0 -2em 0 yellow,
+        2em -2em 0 yellow,
+        4em -2em 0 yellow,
+        6em -2em 0 yellow,
+        8em -2em 0 yellow,
+        10em -2em 0 yellow,
+        12em -2em 0 yellow,
+
+        -10em 0 0 red,
+        -8em 0 0 red,
+        -6em 0 0 red,
+        -4em 0 0 red,
+        -2em 0 0 red,
+        0 0 0 red,
+        2em 0 0 red,
+        4em 0 0 red,
+        6em 0 0 red,
+        8em 0 0 red,
+        10em 0 0 red,
+
+        -8em 2em 0 green,
+        -6em 2em 0 green,
+        -4em 2em 0 green,
+        -2em 2em 0 green,
+        0 2em 0 green,
+        2em 2em 0 green,
+        4em 2em 0 green,
+        6em 2em 0 green,
+        8em 2em 0 green,
+
+        -6em 4em 0 orange,
+        -4em 4em 0 orange,
+        -2em 4em 0 orange,
+        0 4em 0 orange,
+        2em 4em 0 orange,
+        4em 4em 0 orange,
+        6em 4em 0 orange,
+
+        -4em 6em 0 deeppink,
+        -2em 6em 0 deeppink,
+        0 6em 0 deeppink,
+        2em 6em 0 deeppink,
+        4em 6em 0 deeppink,
+
+        -2em 8em 0 purple,
+        0 8em 0 purple,
+        2em 8em 0 --text-black,
+
+        0 10em 0 --text-black;
+    }
+}
