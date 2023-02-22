@@ -163,9 +163,11 @@ section:nth-of-type(1) div div:nth-of-type(2) {
     0% {
         transform: translateX(0%);
     }
-    50%{
+
+    50% {
         transform: translateX(-200%);
     }
+
     100% {
         transform: translateX(-200%) rotate(45deg);
     }
@@ -175,9 +177,11 @@ section:nth-of-type(1) div div:nth-of-type(2) {
     0% {
         transform: translateX(0%);
     }
-    50%{
+
+    50% {
         transform: translateX(200%);
     }
+
     100% {
         transform: translateX(200%) rotate(45deg);
         /* transform: translateX(200%) rotate(45deg); */
@@ -685,7 +689,6 @@ section:nth-of-type(3) div div {
     width: 10px;
     height: 20px;
     background-color: white;
-    animation: firework 1.5s ease-out infinite;
     box-shadow:
         -10em -10em 0 #ff4136,
         10em -10em 0 #2ecc40,
@@ -752,6 +755,10 @@ section:nth-of-type(3) div div:nth-child(30) {
     background-color: #3d9970;
 }
 
+section:nth-of-type(3):has(#action:checked) div div {
+    animation: firework 1.5s ease-out infinite;
+}
+
 @keyframes firework {
     0% {
         opacity: 0;
@@ -769,6 +776,60 @@ section:nth-of-type(3) div div:nth-child(30) {
     }
 }
 
-section:nth-of-type(3):has(#background-3:checked) div div{
-    animation: paused;
+section:nth-of-type(4) form {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+}
+
+section:nth-of-type(4) label {
+    color: white;
+}
+
+section:nth-of-type(4):has(#background-4:checked) {
+    /* background-image:
+        repeating-linear-gradient(
+            transparent,
+            var(--last-green) 10%
+        ),
+        repeating-radial-gradient(
+            var(--base-green) 10%,
+            var(--last-green) 20%
+        ); */
+    background-color: var(--text-white);
+}
+
+section:nth-of-type(4):has(#background-4:checked) label {
+    color: black;
+}
+
+section:nth-of-type(4) div {
+    --maat:1em;
+	
+	width:80vmin;
+	aspect-ratio:1;
+		
+	background-image:
+		radial-gradient(
+			black 20%,
+			transparent 21%
+		),
+		
+		radial-gradient(
+			circle at 50% 50%,
+			transparent 29%,
+			red 30% 40%,
+			transparent 41% 79%,
+			red 80% 90%,
+			transparent 91%
+		),
+		
+		radial-gradient(
+			black 20%,
+			transparent 21%
+		);
+
+	background-size:var(--maat) var(--maat);
+	background-position: center center;
+	
 }
