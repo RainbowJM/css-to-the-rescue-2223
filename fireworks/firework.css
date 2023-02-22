@@ -195,7 +195,6 @@ section:nth-of-type(2) label {
 }
 
 section:nth-of-type(2):has(#background-2:checked) {
-
     background-image:
         radial-gradient(var(--text-white),
             var(--first-green)),
@@ -203,6 +202,10 @@ section:nth-of-type(2):has(#background-2:checked) {
             var(--base-green));
     background-size: 100% 200%;
     background-position: left bottom;
+}
+
+section:nth-of-type(2):has(#background-2:checked) label {
+    color: black;
 }
 
 section:nth-of-type(2) div {
@@ -533,6 +536,128 @@ section:nth-of-type(2) div {
     }
 }
 
+section:nth-of-type(2):has(#color:checked) div {
+    --pallete-pink: #FFC0CB;
+    --pallete-light-pink: #FFB6C1;
+    --pallete-hot-pink: #FF69B4;
+    --pallete-deep-pink: #FF1493;
+    --pallete-pale-violet-pink: #DB7093;
+    --pallete-medium-violet-pink: #C71585;
+
+    width: 2em;
+    aspect-ratio: 1;
+    background-color: var(--pallete-medium-violet-pink);
+
+    box-shadow:
+        -8em -10em 0 var(--pallete-medium-violet-pink),
+        -6em -10em 0 orange,
+        -4em -10em 0 orange,
+        4em -10em 0 orange,
+        6em -10em 0 orange,
+        8em -10em 0 orange,
+
+        -10em -8em 0 deeppink,
+        -8em -8em 0 deeppink,
+        -6em -8em 0 deeppink,
+        -4em -8em 0 deeppink,
+        -2em -8em 0 deeppink,
+        2em -8em 0 deeppink,
+        4em -8em 0 deeppink,
+        6em -8em 0 deeppink,
+        8em -8em 0 deeppink,
+        10em -8em 0 deeppink,
+
+        -12em -6em 0 purple,
+        -10em -6em 0 purple,
+        -8em -6em 0 purple,
+        -6em -6em 0 purple,
+        -4em -6em 0 purple,
+        -2em -6em 0 purple,
+        0 -6em 0 purple,
+        2em -6em 0 purple,
+        4em -6em 0 purple,
+        6em -6em 0 purple,
+        8em -6em 0 purple,
+        10em -6em 0 purple,
+        12em -6em 0 purple,
+
+        -12em -4em 0 blue,
+        -10em -4em 0 blue,
+        -8em -4em 0 blue,
+        -6em -4em 0 blue,
+        -4em -4em 0 blue,
+        -2em -4em 0 blue,
+        0 -4em 0 blue,
+        2em -4em 0 blue,
+        4em -4em 0 blue,
+        6em -4em 0 blue,
+        8em -4em 0 blue,
+        10em -4em 0 blue,
+        12em -4em 0 blue,
+
+        -12em -2em 0 yellow,
+        -10em -2em 0 yellow,
+        -8em -2em 0 yellow,
+        -6em -2em 0 yellow,
+        -4em -2em 0 yellow,
+        -2em -2em 0 yellow,
+        0 -2em 0 yellow,
+        2em -2em 0 yellow,
+        4em -2em 0 yellow,
+        6em -2em 0 yellow,
+        8em -2em 0 yellow,
+        10em -2em 0 yellow,
+        12em -2em 0 yellow,
+
+        -12em 0 0 var(--pallete-medium-violet-pink),
+        -10em 0 0 var(--pallete-medium-violet-pink),
+        -8em 0 0 var(--pallete-medium-violet-pink),
+        -6em 0 0 var(--pallete-medium-violet-pink),
+        -4em 0 0 var(--pallete-medium-violet-pink),
+        -2em 0 0 var(--pallete-medium-violet-pink),
+        0 0 0 var(--pallete-medium-violet-pink),
+        2em 0 0 var(--pallete-medium-violet-pink),
+        4em 0 0 var(--pallete-medium-violet-pink),
+        6em 0 0 var(--pallete-medium-violet-pink),
+        8em 0 0 var(--pallete-medium-violet-pink),
+        10em 0 0 var(--pallete-medium-violet-pink),
+        12em 0 0 var(--pallete-medium-violet-pink),
+
+        -8em 2em 0 green,
+        -6em 2em 0 green,
+        -4em 2em 0 green,
+        -2em 2em 0 green,
+        0 2em 0 green,
+        2em 2em 0 green,
+        4em 2em 0 green,
+        6em 2em 0 green,
+        8em 2em 0 green,
+
+        -6em 4em 0 orange,
+        -4em 4em 0 orange,
+        -2em 4em 0 orange,
+        0 4em 0 orange,
+        2em 4em 0 orange,
+        4em 4em 0 orange,
+        6em 4em 0 orange,
+
+        -4em 6em 0 deeppink,
+        -2em 6em 0 deeppink,
+        0 6em 0 deeppink,
+        2em 6em 0 deeppink,
+        4em 6em 0 deeppink,
+
+        -2em 8em 0 purple,
+        0 8em 0 purple,
+        2em 8em 0 purple,
+
+        0 10em 0 blue;
+
+    /* animation-name: change; */
+    /* animation-duration: 1s; */
+    animation-play-state: paused;
+    /* animation-iteration-count: infinite; */
+}
 section:nth-of-type(3) div {
     display: flex;
     flex-wrap: wrap;
