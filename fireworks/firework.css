@@ -652,6 +652,27 @@ section:nth-of-type(2):has(#color:checked) div {
     }
 }
 
+section:nth-of-type(3) form {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+}
+
+section:nth-of-type(3) label {
+    color: white;
+}
+
+section:nth-of-type(3):has(#background-3:checked) {
+    background-image:
+        radial-gradient(var(--last-green),
+            var(--first-green));
+    background-size: 100% 200%;
+}
+
+section:nth-of-type(3):has(#background-3:checked) label {
+    color: black;
+}
+
 section:nth-of-type(3) div {
     display: flex;
     flex-wrap: wrap;
