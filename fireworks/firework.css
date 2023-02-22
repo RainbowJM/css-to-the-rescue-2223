@@ -768,3 +768,7 @@ section:nth-of-type(3) div div:nth-child(30) {
         transform: translateY(0);
     }
 }
+
+section:nth-of-type(3):has(#background-3:checked) div div{
+    animation: paused;
+}
