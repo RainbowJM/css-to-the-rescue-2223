@@ -825,6 +825,7 @@ section:nth-of-type(4):has(#background-4:checked) label {
 section:nth-of-type(4):has(#background-4:checked) form{
     background-color: var(--text-white);
 }
+
 section:nth-of-type(4) div {
     width:80vmin;
     background-color: darkgreen;
