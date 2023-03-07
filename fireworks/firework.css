@@ -22,7 +22,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: black;
     display: grid;
     place-content: center;
     align-items: center;
@@ -44,7 +44,6 @@ header h1 {
     0% {
         color: #52006A;
         font-family: 'Courier New', Courier, monospace;
-
     }
 
     25% {
@@ -756,10 +755,10 @@ section:nth-of-type(3) div div:nth-child(30) {
 }
 
 section:nth-of-type(3):has(#action:checked) div div {
-    animation: firework 1.5s ease-out infinite;
+    animation: bounce 1.5s ease-out infinite;
 }
 
-@keyframes firework {
+@keyframes bounce {
     0% {
         opacity: 0;
         transform: translateY(0);
@@ -808,7 +807,7 @@ section:nth-of-type(4):has(#background-4:checked) {
             transparent 21%);
     background-size: var(--maat) var(--maat);
     background-position: center center;
-    background-color: var(--text-white);
+    background-color: black;
 }
 
 section:nth-of-type(4):has(#background-4:checked) label {
@@ -868,6 +867,13 @@ section:nth-of-type(4):has(#shape:checked) div {
     }
 }
 
+section:nth-of-type(5) h1 {
+    color: var(--text-white);
+    position: absolute;
+    top: 0.5em;
+    left: 1em;
+}
+
 section:nth-of-type(5) form {
     position: absolute;
     bottom: 1em;
@@ -889,23 +895,201 @@ section:nth-of-type(5):has(#background-5:checked) label {
 }
 
 section:nth-of-type(5) div {
-    width: 2em;
-    background-color: yellow;
+    width: 35em;
     aspect-ratio: 1;
+    background:
+        repeating-linear-gradient(300deg,
+            rgba(255, 0, 0, 0.5) 45px,
+            rgba(255, 153, 0, 0.5) 80px,
+            rgba(255, 255, 0, 0.5) 120px,
+            rgba(0, 255, 0, 0.5) 160px,
+            rgba(0, 0, 255, 0.5) 200px,
+            rgba(75, 0, 130, 0.5) 240px,
+            rgba(238, 130, 238, 0.5) 280px,
+            rgba(255, 0, 0, 0.5) 300px),
+        repeating-linear-gradient(-300deg,
+            rgba(255, 0, 0, 0.5) 30px,
+            rgba(255, 153, 0, 0.5) 60px,
+            rgba(255, 255, 0, 0.5) 90px,
+            rgba(0, 255, 0, 0.5) 120px,
+            rgba(0, 0, 255, 0.5) 150px,
+            rgba(75, 0, 130, 0.5) 180px,
+            rgba(238, 130, 238, 0.5) 210px,
+            rgba(255, 0, 0, 0.5) 230px),
+        repeating-linear-gradient(30deg,
+            red 50px,
+            orange 100px,
+            yellow 150px,
+            green 200px,
+            blue 250px,
+            indigo 300px,
+            violet 350px,
+            red 370px);
+    animation: move 1s infinite alternate;
 }
 
-section:nth-of-type(5):has(#action:checked) div {
-    animation: emoij 4s infinite alternate;
+@keyframes move {
+    50% {
+        background:
+            repeating-linear-gradient(190deg,
+                rgba(255, 0, 0, 0.5) 40px,
+                rgba(255, 153, 0, 0.5) 80px,
+                rgba(255, 255, 0, 0.5) 120px,
+                rgba(0, 255, 0, 0.5) 160px,
+                rgba(0, 0, 255, 0.5) 200px,
+                rgba(75, 0, 130, 0.5) 240px,
+                rgba(238, 130, 238, 0.5) 280px,
+                rgba(255, 0, 0, 0.5) 300px),
+            repeating-linear-gradient(-190deg,
+                rgba(255, 0, 0, 0.5) 30px,
+                rgba(255, 153, 0, 0.5) 60px,
+                rgba(255, 255, 0, 0.5) 90px,
+                rgba(0, 255, 0, 0.5) 120px,
+                rgba(0, 0, 255, 0.5) 150px,
+                rgba(75, 0, 130, 0.5) 180px,
+                rgba(238, 130, 238, 0.5) 210px,
+                rgba(255, 0, 0, 0.5) 230px);
+    }
+
+    100% {
+        background:
+            repeating-linear-gradient(-190deg,
+                rgba(255, 0, 0, 0.5) 30px,
+                rgba(255, 153, 0, 0.5) 60px,
+                rgba(255, 255, 0, 0.5) 90px,
+                rgba(0, 255, 0, 0.5) 120px,
+                rgba(0, 0, 255, 0.5) 150px,
+                rgba(75, 0, 130, 0.5) 180px,
+                rgba(238, 130, 238, 0.5) 210px,
+                rgba(255, 0, 0, 0.5) 230px),
+            repeating-linear-gradient(23deg,
+                red 50px,
+                orange 100px,
+                yellow 150px,
+                green 200px,
+                blue 250px,
+                indigo 300px,
+                violet 350px,
+                red 370px);
+    }
+
 }
 
-@keyframes emoij {
-    
+section:nth-of-type(5) figure:nth-of-type(1) {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background-color: black;
+    width: 2em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: flip 0.5s infinite linear;
 }
 
-section:nth-of-type(5):has(#action:checked):has(#color:checked) div {
-    animation: doubleChange 4s infinite;
+section:nth-of-type(5) figure:nth-of-type(2) {
+    position: absolute;
+    margin: auto;
+    top: 25%;
+    left: 0;
+    right: 0;
+    background-color: black;
+    width: 2em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: flip 0.5s infinite linear;
 }
 
-@keyframes doubleChange {
-    
+section:nth-of-type(5) figure:nth-of-type(3) {
+    position: absolute;
+    margin: auto;
+    top: 75%;
+    left: 0;
+    right: 0;
+    background-color: black;
+    width: 2em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: flip 0.5s infinite linear;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0turn);
+    }
+    100% {
+        transform: rotateY(1turn);
+    }
+}
+
+section:nth-of-type(5) article:nth-of-type(1)  {
+    width: 2em;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    position: absolute;
+    margin: auto;
+    top: 62.5%;
+    left: 0;
+    right: 50%;
+    animation: verticale 1s infinite linear alternate;
+}
+
+section:nth-of-type(5) article:nth-of-type(2) {
+    width: 2em;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    position: absolute;
+    margin: auto;
+    top: 37.5%;
+    left: 0;
+    right: 50%;
+    animation: verticale 1s infinite linear alternate;
+}
+
+section:nth-of-type(5) article:nth-of-type(3)  {
+    width: 2em;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    position: absolute;
+    margin: auto;
+    top: 62.5%;
+    left: 50%;
+    right: 0;
+    animation: verticale 1s infinite linear alternate;
+}
+
+section:nth-of-type(5) article:nth-of-type(4)  {
+    width: 2em;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    position: absolute;
+    margin: auto;
+    top: 37.5%;
+    left: 50%;
+    right: 0;
+    animation: verticale 1s infinite linear alternate;
+}
+
+@keyframes verticale {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-600%);
+    }
+}
+
+section:nth-of-type(5):has(#pause:checked) div,
+section:nth-of-type(5):has(#pause:checked) article:nth-of-type(1),
+section:nth-of-type(5):has(#pause:checked) article:nth-of-type(2),
+section:nth-of-type(5):has(#pause:checked) article:nth-of-type(3),
+section:nth-of-type(5):has(#pause:checked) article:nth-of-type(4){
+    animation-play-state: paused;
+}
+
+section:nth-of-type(6) h1 {
+    color: var(--text-white);
+    text-align: center;
 }
