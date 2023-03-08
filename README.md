@@ -56,28 +56,7 @@ For the pixel art I used `box-shadow` to create the heart shape and I used again
 Also this week I tried to create e bouncing show of color. When I was making it, SOmething on expeted happend. Because I didn't use the correct CSS Selector, it effected the first two shows also. Check the pictures below.
 
 
-### Eerste CSS Animatie 
-Om animatie in css te maken, gebruiken we `@keyframes`. Zoals bij animaties programmas bepaal je aantal keyframes en je zeg het wat moet 
-gebeuren. 
 
-<img src="./images/eerste-experimenten.png">
-Hier ben ik begonnen met ik begonnen met de eerste tween animaties voor mijn interactieve vuurwerkshows. Het zijn animatie die ik heb geleerd tijdens de thema sessie van Sanne. 
-
-Bij de eerste section heb ik een soort van pixel animatie maken met behulp van box-shadows. Daarna probeer ik de box-shadow te animeren met @keyframes. 
-
-Bij de tweede section heb ik de vierkant op een 3D ruimte gedraaid. Ik heb de property `transform-style: preserve-3d` gebruikt bij. Dus wanneer ik de `transform` property gebruikt het gebeurd het allemaal in een driedimensionale ruimte. Dus bij de tweede section heb je een flip effect met de rotate bij de X-Axis.
-
-
-### 3D transform
-<img src="./images/3d-animatie.png">
-
-Verder heb ik een beetje gespeeld met 3D Animatie. Ik heb verschillende properties geprobeerd, zoals  `perspective`, `transform-style: preserver-3d` en `transform-origin`. 
-
-Ik wil het een beetje interactief maken dat en ik heb de :has() selector gebruikt.
-
-
-# Voortgang 2
-ALs feedback heb ik gekregen dat ik meer context kan toevoegen, zodat iemand anders kan weten wat voor van vuurwerk het is. 
 
 ## Planning
 - De layout interactiever te maken, door de vakjes te flippen en zie je aan de achterkant een korte beschrijving
