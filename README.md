@@ -23,7 +23,7 @@ Learn how to work with different CSS Selector and create a show with the knowled
 - [Week 3](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-3)
 - [Week 4](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-4)
 ---
-### Week 1
+# Week 1
 In the first week, we had to choose an assignment out of the 4 options.
 
 The options were:
@@ -36,40 +36,13 @@ After checking all the options, I went with the *Interactive Firework Show*.
 
 At first, I wanted to make a show with only emoji's. When I was browsering to find all the possibilities, I saw that there were so many things that you can do with CSS. That is why I decide to create e slideshow where I can show different show and technics that I have learn. 
 
+The first thing that I did was to figure out how to make a slideshow. This is when I find out about `scroll-snap`. After I got that working, I strated with the first show. I this show I wanted to le something move. 
+After the workshops and a little bit of research. I find out that you can do that by making a animation and by using `transform`.
+
 <img width="1164" alt="Screenshot 2023-03-08 at 11 51 59" src="https://user-images.githubusercontent.com/59873140/223696449-250d4fe1-536f-4aa5-9c0b-2f9b7d1adeee.png">
 
-### Toelichting
-Hier heb ik een aantal ideeen voor mijn opdracht geschets.
-Ik heb technieken van css toegevoegd die ik kan implementeren in mijn project.
+What I did was that the box goes up and then you have two other will move from the middle to the side and only a green box will be in the middle. It keep repeating itself.
 
-CSS technieken zoals:
-- Scroll-snap
-- prefer color scheme
-- Paralax
-- 3D Transform
-- Motion path met svg
-- Interactie met :has selector
-- Gradients
-
-
-### Planning
-- Inspiratie zoeken van andere werken
-- Inspiratie beelden verzamelen
-- Schetsen maken van mogelijke ideeen
-- Ideen kiezen en breakdownschets maken
-- Eerste stukje proberen te coderen
-
-
-# Voortgang 1
-Stapje van de versie 
-Idee  vakjes met verschillende vuurwerken, dus met animatie en de vakken swipen met scroll-snap. En andere css technieken proberen
-
-## Planning na voortgang 1
-- CSS technieken onderzoeken en toepassen
-- De layout van de pagina klaar hebben 
-- Themassesie onderwerpen toepassen
-
-Mijn project is een slideshow met verschillende vuurwerkshows waar je kan zelf bedienen. In elke slide is er een CSS techniek die ik had onderzocht en in de show geimplemnteerd. 
 ---
 # Week 2
 Na de eerste voortganggesprek heb ik meer onderzoek gedaan aan verschillende css technieken die ik kan gebruiken voor mij vuurwerk showcase. Alleen ik moest nog leren hoe ze werken. Dus ik probeer bij elke vakje, een css techniek toepassen en elke keer opbouwen als ik nieuwe dingen leert. 
