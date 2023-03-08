@@ -1,6 +1,7 @@
 # Table Of Content
 * [The Firework Show](https://github.com/RainbowJM/css-to-the-rescue-2223#the-firework-show)
     * [Progress](https://github.com/RainbowJM/css-to-the-rescue-2223#progress)
+        * [Week 1]()
 ---
 # The Firework Show
 
@@ -13,14 +14,12 @@ In this project you will see how I learned to use all the different CSS selector
 
 Mijn project is een slideshow met verschillende vuurwerkshows waar je kan zelf bedienen. In elke slide is er een CSS techniek die ik had onderzocht en in de show geimplemnteerd. 
 
-![poster van de slideshow](./images/poster-voor-readme.png)
----
 ## Progress
 
-- [Week 1](https://github.com/K3A101/css-to-the-rescue-2223#week-1---planning)
-- [Week 2](https://github.com/K3A101/css-to-the-rescue-2223#week-2)
-- [Week 3](https://github.com/K3A101/css-to-the-rescue-2223#week-3)
-- [Week 4](https://github.com/K3A101/css-to-the-rescue-2223#week-4)
+- [Week 1](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-1---planning)
+- [Week 2](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-2)
+- [Week 3](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-3)
+- [Week 4](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-4)
 ---
 
 
