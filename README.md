@@ -100,6 +100,11 @@ For the interaction I used `:has()`, basically I did that each time that you che
 Also I used the `:has()` for tha animation of almost all the shows.
 
 This caused some color mixed that didnot match with what I wanted. 
+<img width="1352" alt="Screenshot 2023-03-08 at 10 11 46" src="https://user-images.githubusercontent.com/59873140/223720079-e3722845-e252-455d-8254-718ab239f5e6.png">
+
+<img width="1116" alt="Screenshot 2023-03-08 at 14 00 48" src="https://user-images.githubusercontent.com/59873140/223720101-c4f16fa7-2491-4f2c-b0ad-08362853bb4a.png">
+
+<img width="1108" alt="Screenshot 2023-03-08 at 14 01 04" src="https://user-images.githubusercontent.com/59873140/223720125-ff7fab7d-cb59-45f3-846d-ec3ef4cec81f.png">
 
 In the 4th show I did the show by using `clip-path`
 
