@@ -63,9 +63,9 @@ When I updated the CSS Selector for the bouncing show of color, I got another sh
 
 <img width="1121" alt="Screenshot 2023-03-08 at 12 58 19" src="https://user-images.githubusercontent.com/59873140/223707553-4dfcb71e-93b9-4b01-ba24-18f2a583a40a.png">
 
-<img width="1352" alt="Screenshot 2023-02-16 at 23 48 59" src="https://user-images.githubusercontent.com/59873140/223707845-ed1225d5-997c-4779-b059-9f25d32833bd.png">
+<img width="1010" alt="Screenshot 2023-03-08 at 13 12 26" src="https://user-images.githubusercontent.com/59873140/223710521-ed36abc3-e0cd-4b94-89fd-752e33ba764f.png">
 
-<img width="1352" alt="Screenshot 2023-02-16 at 23 49 36" src="https://user-images.githubusercontent.com/59873140/223707932-c2e19c18-8b89-4f31-a8e0-5ecb040f13de.png">
+<img width="1013" alt="Screenshot 2023-03-08 at 13 12 38" src="https://user-images.githubusercontent.com/59873140/223710539-09565740-b392-40d1-86bd-e6456079f423.png">
 
 This saw because I didn't use the correct child of the `div` for this show, after a while discovered the error and fixed it.
 
