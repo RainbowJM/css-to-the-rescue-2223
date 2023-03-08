@@ -5,6 +5,7 @@
         * [Week 2](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-2)
         * [Week 3](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-3)
         * [Week 4](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-4)
+    *[Reflection]()
 ---
 # The Firework Show
 
@@ -70,9 +71,9 @@ When I updated the CSS Selector for the bouncing show of color, I got another sh
 This saw because I didn't use the correct child of the `div` for this show, after a while discovered the error and fixed it.
 
 I made a branch of this also:
-- [Damage heart]()
-- [Pixel-heart-damage]()
-- [Firework-to-confetti]()
+- [Damage heart](https://github.com/RainbowJM/css-to-the-rescue-2223/tree/damage-heart)
+- [Pixel-heart-damage](https://github.com/RainbowJM/css-to-the-rescue-2223/tree/pixel-heart-damage)
+- [Firework-to-confetti](https://github.com/RainbowJM/css-to-the-rescue-2223/tree/firework-to-confetti)
 ---
 # Week 3
 Now that I had 3 of the shows done, now I wanted to add the interactive part of the show. Where you can click on something and it changes the show. 
@@ -110,33 +111,17 @@ In the 4th show I did the show by using `clip-path`
 
 ---
 # Week 4 
+This is the last week of the project. 
 
-I made a branch of this also:
-- [Unexpected]()
+My goals for this week is/was to add one last section of firework show. An d do the last final touch ups.
 
+For the 5th section I wanted to created a realistic firework show with gradient. When I was creating it I got in trouble. the whole show started glitching and I couldn't figure out why. 
+So I meant a branch of the show and created a other show.
 
-Dit is de laatste week voor de beeordelingsgesprek. In deze week heb ik  gefocust op de details en puntjes op de i.
-
-## Wat ik heb gedaan
-- De laatste vakje gevuld met animatie
-- Een beschrijving per vuurwerkshow
-- Code opschonen
-- Readme Updaten met nieuwe informatie
-
+The branch:
+- [Unexpected](https://github.com/RainbowJM/css-to-the-rescue-2223/tree/unexpected)
 ---
-
-### Laatste show: Vuurwerk achter de berg
-De laatste vuurwerkshow is een combinatie van alle CSS technieken die ik de laatste vier weken had geleerd. Ik hebe gebruikt gemaakt van gradients, 3D transforms en box-shadows. Wat je ziet is vuurwerkshow die plaatsneem achter de bergen. 
-
-De onderdelen:
-- De landschap die bestaat uit twee linear gradients, een voor de lucht en de andere voor de grond.
-- De bergen,  zijn driekhoeken gevormd door  clip-paths
-- De sterrebn gemaakt met kleine witte box-shadows
-- De vuurwerk zelf zijn de 3D transform animatie
-
-![Laatste vakje](./images/vakje-7.png)
-
-[Hier is de code]()
+# Reflection
 
 ---
 
