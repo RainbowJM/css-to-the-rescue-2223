@@ -36,7 +36,7 @@ The options were:
 
 After checking all the options, I went with the *Interactive Firework Show*.
 
-Techniques that I think I will use for this assigment:
+Techniques that I think I will use for this assignment:
 - Grid
 - Scroll snap
 - Animations
@@ -44,7 +44,10 @@ Techniques that I think I will use for this assigment:
 
 At first, I wanted to make a show with only emoji's. When I was browsering to find all the possibilities, I saw that there were so many things that you can do with CSS. That is why I decide to create a slideshow where I can show different show and techniques that I have learn. 
 
-My biggest changelleng will be to not use `id` or `class` in the HTML or CSS.
+<img width="783" alt="Screenshot 2023-03-08 at 15 29 27" src="https://user-images.githubusercontent.com/59873140/223739680-24331541-f971-49c7-922d-0c6cc03c2961.png">
+
+
+My biggest changeling will be to not use `id` or `class` in the HTML or CSS.
 
 The first thing that I did was to figure out how to make a slideshow. This is when I find out about `scroll-snap`. After I got that working, I started with the first show. In this show, I wanted to let something move. 
 After the workshops and a little bit of research. I find out that you can do that by making an animation and by using `transform`.
@@ -87,11 +90,11 @@ I made a branch of this also:
 # Week 3
 Now that I had 3 of the shows done, now I wanted to add the interactive part of the show. Where you can click on something and it changes the show. 
 
-One of the interaction that I have applied is that when you check the box teh background changes.
+One of the interaction that I have applied is that when you check the box, the background changes.
 
-This is the part were gradients comes to play. All the background has a gradient effect.
+This is the part where gradients come to play. All the background has a gradient effect.
 
-There is 6 type of gradient:
+There are 6 type of gradient:
 - Linear-gradient
 - Radial-gradient
 - Conic-gradient
@@ -104,19 +107,19 @@ For the shows I only used:
 - Linear-gradient
 - Repeating-linear-gradient
 
-I wanted to experiment with all six but at the end I chose to only use three.
+I wanted to experiment with all six, but in the end I chose to only use three.
 
-For the interaction I used `:has()`, basically I did that each time that you check a box it changes the background to teh gradient version. 
-Also I used the `:has()` for tha animation of almost all the shows.
+For the interaction I used `:has()`, basically I did that each time that you check a box it changes the background to the gradient version. 
+Also, I used the `:has()` for that animation of almost all the shows.
 
-This caused some color mixed that didnot match with what I wanted. 
+This caused some color mixed that did not match with what I wanted. 
 <img width="1352" alt="Screenshot 2023-03-08 at 10 11 46" src="https://user-images.githubusercontent.com/59873140/223720079-e3722845-e252-455d-8254-718ab239f5e6.png">
 
 <img width="1116" alt="Screenshot 2023-03-08 at 14 00 48" src="https://user-images.githubusercontent.com/59873140/223720101-c4f16fa7-2491-4f2c-b0ad-08362853bb4a.png">
 
 <img width="1108" alt="Screenshot 2023-03-08 at 14 01 04" src="https://user-images.githubusercontent.com/59873140/223720125-ff7fab7d-cb59-45f3-846d-ec3ef4cec81f.png">
 
-In the 4th show I did the show by using `clip-path`
+In the 4th show, I did the show by using `clip-path`
 
 ---
 # Week 4 
@@ -124,18 +127,18 @@ This is the last week of the project.
 
 My goals for this week is/was to add one last section of firework show. And do the last final touch ups.
 
-For the 5th section I wanted to created a realistic firework show with gradient. When I was creating it I got in trouble. the whole show started glitching and I couldn't figure out why. 
-So I meant a branch of the show and created a other show.
+For the 5th section, I wanted to create a realistic firework show with gradient. When I was creating it, I got in trouble. The whole show started glitching, and I couldn't figure out why. 
+So I meant a branch of the show and created another show.
 
 The branch:
 - [Unexpected](https://github.com/RainbowJM/css-to-the-rescue-2223/tree/unexpected)
 ---
 # Reflection
 
-Like I said in the beginning at first I did not know nothing about CSS selectors. All web application that I have made I used `id` and `class`. 
-For me this was a very intersting and eductive. I learned a lot about the CSS selector.
+Like I said in the beginning, at first I did not know anything about CSS selectors. All web application that I have made I used `id` and `class`. 
+For me, this was a very interesting and educative. I learned a lot about the CSS selector.
 
-It was very chalanging to only work with CSS selector, but I did it an make something out of it. 
+It was very challenging to only work with CSS selector, but I did it and make something out of it. 
 That works and does what it was intended to.
 
 ---
