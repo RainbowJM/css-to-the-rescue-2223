@@ -8,9 +8,9 @@
 ---
 # The Firework Show
 
-In this repository you will be able to follow my progress is gaining more knowledge in CSS in general. At the beginning of this course my knowledge of CSS was to only use `<div>` with `id` and `class`. But in this project you will see how I gained more knowledge about CSS, starting with CSS selectors. 
+In this repository, you will be able to follow my progress is gaining more knowledge in CSS in general. At the beginning of this course, my knowledge of CSS was to only use `<div>` with `id` and `class`. But in this project you will see how I gained more knowledge about CSS, starting with CSS selectors. 
 
-In this project you will see how I learned to use all the different CSS selectors. All of this I have done it in a intercative firework show.
+In this project, you will see how I learned to use all the different CSS selectors. All of this I have done it in an interactive firework show.
 
 Main Goal:
 Learn how to work with different CSS Selector and create a show with the knowledge that I get while learn CSS.
@@ -24,7 +24,7 @@ Learn how to work with different CSS Selector and create a show with the knowled
 - [Week 4](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-4)
 ---
 ### Week 1
-In the first week we had to choose an assigment out of the 4 options.
+In the first week, we had to choose an assignment out of the 4 options.
 
 The options were:
 - 'Modulair bediennings paneel'
@@ -34,7 +34,9 @@ The options were:
 
 After checking all the options, I went with the *Interactive Firework Show*.
 
-At first I wanted to I wanted to make a show with only emoij's. When I was browsering to find all the possibelities, I saw that there was so many things that you can do with CSS. That is why I decide te create e slideshow where I can show different show and technics that I have learn. 
+At first, I wanted to make a show with only emoji's. When I was browsering to find all the possibilities, I saw that there were so many things that you can do with CSS. That is why I decide to create e slideshow where I can show different show and technics that I have learn. 
+
+<img width="1164" alt="Screenshot 2023-03-08 at 11 51 59" src="https://user-images.githubusercontent.com/59873140/223696449-250d4fe1-536f-4aa5-9c0b-2f9b7d1adeee.png">
 
 ### Toelichting
 Hier heb ik een aantal ideeen voor mijn opdracht geschets.
