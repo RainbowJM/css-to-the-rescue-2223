@@ -8,6 +8,7 @@ In this repository you will be able to follow my progress is gaining more knowle
 
 In this project you will see how I learned to use all the different CSS selectors. All of this I have done it in a intercative firework show.
 
+<img width="1352" alt="Screenshot 2023-03-08 at 10 11 46" src="https://user-images.githubusercontent.com/59873140/223681461-d73908e2-9392-4d35-a416-507b202a2c39.png">
 
 
 Mijn project is een slideshow met verschillende vuurwerkshows waar je kan zelf bedienen. In elke slide is er een CSS techniek die ik had onderzocht en in de show geimplemnteerd. 
