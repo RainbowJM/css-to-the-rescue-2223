@@ -1,7 +1,10 @@
 # Table Of Content
 * [The Firework Show](https://github.com/RainbowJM/css-to-the-rescue-2223#the-firework-show)
     * [Progress](https://github.com/RainbowJM/css-to-the-rescue-2223#progress)
-        * [Week 1]()
+        * [Week 1](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-1)
+        * [Week 2](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-2)
+        * [Week 3](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-3)
+        * [Week 4](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-4)
 ---
 # The Firework Show
 
@@ -9,38 +12,29 @@ In this repository you will be able to follow my progress is gaining more knowle
 
 In this project you will see how I learned to use all the different CSS selectors. All of this I have done it in a intercative firework show.
 
+Main Goal:
+Learn how to work with different CSS Selector and create a show with the knowledge that I get while learn CSS.
+
 <img width="1352" alt="Screenshot 2023-03-08 at 10 11 46" src="https://user-images.githubusercontent.com/59873140/223681461-d73908e2-9392-4d35-a416-507b202a2c39.png">
 
-
-Mijn project is een slideshow met verschillende vuurwerkshows waar je kan zelf bedienen. In elke slide is er een CSS techniek die ik had onderzocht en in de show geimplemnteerd. 
-
 ## Progress
-
-- [Week 1](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-1---planning)
+- [Week 1](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-1)
 - [Week 2](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-2)
 - [Week 3](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-3)
 - [Week 4](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-4)
 ---
+### Week 1
+In the first week we had to choose an assigment out of the 4 options.
 
+The options were:
+- 'Modulair bediennings paneel'
+- 'Interactieve vuurwerkshow'
+- 'Maak een 3D rubrik's kubus
+- 'Tailwind zonder tailwind, met moderne CSS'
 
-### Week 1 - Planning
-De opdracht die ik ga kiezen is de Interactieve vuurwerkshow.
+After checking all the options, I went with the *Interactive Firework Show*.
 
-De CSS technieken die ik ga gebruiken zijn:
-- Prefer-color-scheme
-- Prefer reduced motion
-- Gradients 
-- Motion path 
-- 3D Transforms en animatie
-
-### Code uitdagingen:
-- Ik moet proberen om uit mijn comfortzone te gaan. Ik heb de neiging om dingen niet te probren die ik niet kan begrijpen of kan. Moet deze keer wel gaan doen.
-- Ik heb moeite om specifiek berekening te gebruiken in css, bijvoorbeeld met calc(). Ook heb ik moeite met de waardes van bijvoorbeeld box-shadows etc.
-
-
-
-## Eerste schetsen
-<img src="./images/schets-v1.png" >
+At first I wanted to I wanted to make a show with only emoij's. When I was browsering to find all the possibelities, I saw that there was so many things that you can do with CSS. That is why I decide te create e slideshow where I can show different show and technics that I have learn. 
 
 ### Toelichting
 Hier heb ik een aantal ideeen voor mijn opdracht geschets.
@@ -73,6 +67,7 @@ Idee  vakjes met verschillende vuurwerken, dus met animatie en de vakken swipen 
 - De layout van de pagina klaar hebben 
 - Themassesie onderwerpen toepassen
 
+Mijn project is een slideshow met verschillende vuurwerkshows waar je kan zelf bedienen. In elke slide is er een CSS techniek die ik had onderzocht en in de show geimplemnteerd. 
 ---
 # Week 2
 Na de eerste voortganggesprek heb ik meer onderzoek gedaan aan verschillende css technieken die ik kan gebruiken voor mij vuurwerk showcase. Alleen ik moest nog leren hoe ze werken. Dus ik probeer bij elke vakje, een css techniek toepassen en elke keer opbouwen als ik nieuwe dingen leert. 
