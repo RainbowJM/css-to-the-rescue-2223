@@ -1,9 +1,10 @@
 # Table Of Content
-* [The Firework Show]()
+* [The Firework Show](https://github.com/RainbowJM/css-to-the-rescue-2223#the-firework-show)
+    * [Progress](https://github.com/RainbowJM/css-to-the-rescue-2223#progress)
 ---
 # The Firework Show
 
-In this repository you will be able to follow my progress is gaining more knowledge in CSS in general. At the beginning of this course my knowledge of CSS was to only use <div> with id and class. But in this project you will see how I gained more knowledge about CSS, starting with CSS selectors. 
+In this repository you will be able to follow my progress is gaining more knowledge in CSS in general. At the beginning of this course my knowledge of CSS was to only use `<div>` with `id` and `class`. But in this project you will see how I gained more knowledge about CSS, starting with CSS selectors. 
 
 For this project I choice to make 
 
