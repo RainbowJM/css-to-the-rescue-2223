@@ -141,6 +141,13 @@ For me, this was a very interesting and educative. I learned a lot about the CSS
 It was very challenging to only work with CSS selector, but I did it and make something out of it. 
 That works and does what it was intended to.
 
+Once I understood how CSS selector works it was pretty easy to work with it. The part that I find difficult was gradient to understand it when you start using more then one together. But I did make something with it.
+
+Things that I did not get a changes to learn are SVG and 3D.
+
+For the final result please check this 
+[THE SHOW](rainbowjm.github.io/css-to-the-rescue-2223/fireworks)
+
 ---
 
 # Source
