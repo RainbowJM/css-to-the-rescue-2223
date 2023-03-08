@@ -34,7 +34,7 @@ The options were:
 
 After checking all the options, I went with the *Interactive Firework Show*.
 
-At first, I wanted to make a show with only emoji's. When I was browsering to find all the possibilities, I saw that there were so many things that you can do with CSS. That is why I decide to create e slideshow where I can show different show and technics that I have learn. 
+At first, I wanted to make a show with only emoji's. When I was browsering to find all the possibilities, I saw that there were so many things that you can do with CSS. That is why I decide to create a slideshow where I can show different show and technics that I have learn. 
 
 The first thing that I did was to figure out how to make a slideshow. This is when I find out about `scroll-snap`. After I got that working, I strated with the first show. I this show I wanted to le something move. 
 After the workshops and a little bit of research. I find out that you can do that by making a animation and by using `transform`.
@@ -43,17 +43,17 @@ After the workshops and a little bit of research. I find out that you can do tha
 
 What I did was that the box goes up and then you have two other will move from the middle to the side and only a green box will be in the middle. It keep repeating itself.
 
+ To make a animation in CSS you have to use `keyframes`. With this you can tell the object what to do at what time.
+
 <img width="1158" alt="Screenshot 2023-03-08 at 12 29 29" src="https://user-images.githubusercontent.com/59873140/223702272-79862b47-09e0-4da7-80ad-a081a8688abb.png">
 
 ---
 # Week 2
-Na de eerste voortganggesprek heb ik meer onderzoek gedaan aan verschillende css technieken die ik kan gebruiken voor mij vuurwerk showcase. Alleen ik moest nog leren hoe ze werken. Dus ik probeer bij elke vakje, een css techniek toepassen en elke keer opbouwen als ik nieuwe dingen leert. 
+One of the workshops I got the idea to make a animated pixel art.
 
-Wat ik heb geleerd waren:
-- 3D CSS Animatie
-- De werking van CSS gradients.
-- Geanimeerde pixels
-- Werken met :has() selectors
+For the pixel art I used `box-shadow` to create the heart shape and I used again `keyframes` to animated the colors of the heart shape.
+
+Also this week I tried to create e bouncing show of color. When I was making it, SOmething on expeted happend. Because I didn't use the correct CSS Selector, it effected the first two shows also. Check the pictures below.
 
 
 ### Eerste CSS Animatie 
