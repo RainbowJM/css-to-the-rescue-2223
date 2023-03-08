@@ -6,11 +6,11 @@
 
 In this repository you will be able to follow my progress is gaining more knowledge in CSS in general. At the beginning of this course my knowledge of CSS was to only use `<div>` with `id` and `class`. But in this project you will see how I gained more knowledge about CSS, starting with CSS selectors. 
 
-For this project I choice to make 
+In this project you will see how I learned to use all the different CSS selectors. All of this I have done it in a intercative firework show.
 
 
 
-In deze vak had ik de kans gekregen om los te gaan met CSS. Ik ging CSS technieken ondoerzoeken die ik nooit had gebruikt en daarmee een interactieve vuurwerk showcase maken. De naam zeg het al. Mijn project is een slideshow met verschillende vuurwerkshows waar je kan zelf bedienen. In elke slide is er een CSS techniek die ik had onderzocht en in de show geimplemnteerd. 
+Mijn project is een slideshow met verschillende vuurwerkshows waar je kan zelf bedienen. In elke slide is er een CSS techniek die ik had onderzocht en in de show geimplemnteerd. 
 
 ![poster van de slideshow](./images/poster-voor-readme.png)
 ---
