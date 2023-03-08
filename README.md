@@ -69,145 +69,47 @@ When I updated the CSS Selector for the bouncing show of color, I got another sh
 
 This saw because I didn't use the correct child of the `div` for this show, after a while discovered the error and fixed it.
 
+I made a branch of this also:
+- [Damage heart]()
+- [Pixel-heart-damage]()
+- [Firework-to-confetti]()
 ---
 # Week 3
+Now that I had 3 of the shows done, now I wanted to add the interactive part of the show. Where you can click on something and it changes the show. 
 
-## Wat heb ik geleerd.
+One of the interaction that I have applied is that when you check the box teh background changes.
 
-Gedaan:
-- motion-path
-- Opstapelende geanimeerde Gradients
-- interactie tovoegen
+This is the part were gradients comes to play. All the background has a gradient effect.
 
+There is 6 type of gradient:
+- Linear-gradient
+- Radial-gradient
+- Conic-gradient
+- Repeating-linear-gradient
+- Repeating-radial-gradient
+- Repeating-conic-gradient
 
-### Gradients
-In de volgende vakjes van mijn vuurwerk showcase ging ik meer experimenteren met gradients. Ook heb ik de gradients geanimeerd en verschillende nieuwe dingen geleerd. Eerst heb ik een onderzoek gedaan over gradients in css om de samenstelling  van de properties beter te begrijpen en daarna in de schowcase te implementeren. Verder heb ik ook de workshop over gradients deelgenomen om meer gericht kennis krijgen. 
+For the shows I only used:
+- Radial-gradient
+- Linear-gradient
+- Repeating-linear-gradient
 
-Hieronder zijn verschillende experimenten die ik heb geprobeerd:
+I wanted to experiment with all six but at the end I chose to only use three.
 
-#### 6 gradients
-- `Linear-gradient()`
-- `radial-gradient()`
-- `conic-gradient()`
-- `repeating-linear-gradient()`
-- `repeating-radial-gradient()`
-- `repeating-conic-gradient()`
+For the interaction I used `:has()`, basically I did that each time that you check a box it changes the background to teh gradient version. 
+Also I used the `:has()` for tha animation of almost all the shows.
 
-Om de gradients te animeren kan ik de position en de size animeren. 
+This caused some color mixed that didnot match with what I wanted. 
 
-<img src="./images/gradient-v1.png">
-<img src="./images/gradients-v2.png">
-<img src="./images/gradient-v3.png">
-<img src="./images/gradient-v5.png">
-
-
-
----
-
-### Motion-path
-De volgende trucje voor mijn slideshow was dat ik iets met motion path zou doen. Dit was een uitdaging meaar is wel uiteindelijk gelukt.  Ik heb eerst in illustrator de lijn getekend, en daarna in de code geplaats in een svg eleemnt. Wat ik wilde doen was de ster de path van de lijn volgen. m dat te bereiken heb ik de property `offset-path: path()` gebruikt bij de ster. Om de ster te maken heb ik de de `clip-path: polygoon()` property gebruikt. D path van de lijne heb ik in de offset-path gezet en de ster laten animeren met offset-distance. Van 0% tot 100%. Dus de ster beweegt van 
-```html
-
-   <figure class="stars"> </figure>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 325.85 202.29">
-      <path class="cls-1"  d="m59.22,186.26c56.79,7.03,178.43,13.28,213.4-55.31,46.12-90.47-45.28-117.08-45.28-117.08,0,0-94.27-28.97-140.4,7.69-46.12,36.66-41.83,84.43-17.74,111.76,39.62,44.94,224.65,36.26,249.46-31.34,9.05-24.66,1.72-45.73-6.19-59.22"> </path>         </svg>
-               
-
-```
-
-
-
-
-```css
-/* Hier volg de ster  de path van de lijn  */
-
-section:nth-of-type(5) div figure {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    width: 10em;
-    height: 10em;
-    background-color: #c8ff00;
-
-  /* De path van de lijn  */
-    offset-path: path("m59.22,186.26c56.79,7.03,178.43,13.28,213.4-55.31,46.12-90.47-45.28-117.08-45.28-117.08,0,0-94.27-28.97-140.4,7.69-46.12,36.66-41.83,84.43-17.74,111.76,39.62,44.94,224.65,36.26,249.46-31.34,9.05-24.66,1.72-45.73-6.19-59.22");
-    /* offset-rotate: auto; */
-    animation: follow-path 4s linear alternate infinite;
-}
-
-
-
-@keyframes follow-path {
-    0% {
-        offset-distance: 0%;
-    }
-
-    100% {
-
-        offset-distance: 100%;
-    }
-}
-
-```
-<img src="./images/gradient-v5.png">
-
-
---- 
-# Meer interactie
-VAls laatste heb ik meer interactie toegevoegd in mijn slideshow. Ik heb het zo gedaan dat je met de check box de animatie laten spelen en pauseren. Dit waren allemaal mogelijk met de has selector. 
-
-
---- 
-# Voortgang 3
-
-In de derde voortgang heb ik mijn voortgang besproken. Ik heb nieuwe verandering aan het groep gepresenteerd.
-- nieuwe gradient trucjes
-- De opstapelede box-shadows
-- Motion path
-- Nieuwe vorm van interactie
-
-## Feedback van  voortgang 3
-
-- Uitkijken voor mensen met epilepsie
-- Iets laten gebeuren als het reponsive is
-- De rest van de vakje vullen met experimenten.
-
----
-## Wat heb ik geleerd en gemaakt
- - De titel geanimeerd met een gradient effect
- - De achtergond van de pagina naar een donker blauw verandert
- - Heb ik de zesde vakje gevuld met animaties
- - Ik had de color scheme gezet naar donker.
-
-
- ### Andere achtergrond
- De donkere achtergrond zorgt ervoor dat vakjes meer opvallender zijn. Hiermee kan meer focussen op de vuurwerkshow. 
-
-<img src="./images/andere-achtergrond.png">
-
-### Vuurwerk in de Park
-Ik heb de zesde vakje gevuld met een andere animatie. Het landschap gemaakt met gradients en een picnic tapijt, dus jij (de kijker), zit je vuurwerk te kijken in de park.
-<img src="./images/picnic-show.png">
-
-#### Wat heb ik gebruikt:
-- `radial-gradient()`
--  `linear-gradient()`
-- `conic-gradient()`
-- `box-shadows`
-
-Bij deze link krijg je het uitgebreide code te zien:
-- [Vuurwerk in de park code](https://github.com/K3A101/css-to-the-rescue-2223/wiki/animaties#vuurwerk-in-de-park)
-
----
-## Soort van responsive
-Verder heb ik de showcase responsive gemaakt door de vakjes onder elkaar te zetten bij kleinere scheremen. Het is niet niet helemaal perfect maar alle animaties zijn te zien. Maar mijn focus ligt aan de desktop versie.
-
-<img src="./images/responsive.png">
+In the 4th show I did the show by using `clip-path`
 
 ---
 # Week 4 
+
+I made a branch of this also:
+- [Unexpected]()
+
+
 Dit is de laatste week voor de beeordelingsgesprek. In deze week heb ik  gefocust op de details en puntjes op de i.
 
 ## Wat ik heb gedaan
