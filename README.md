@@ -5,7 +5,8 @@
         * [Week 2](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-2)
         * [Week 3](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-3)
         * [Week 4](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#week-4)
-    *[Reflection]()
+    * [Reflection](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#reflection)
+    * [Source](https://github.com/RainbowJM/css-to-the-rescue-2223/blob/main/README.md#source)
 ---
 # The Firework Show
 
@@ -125,5 +126,13 @@ The branch:
 
 ---
 
-## Bronnen
-- 
+# Source
+- [:has()](https://codepen.io/shooft/pen/NWLWLdP)
+- [:has() checkboxes](https://codepen.io/shooft/pen/zYJYmGJ)
+- [intro :has()](https://www.matuzo.at/blog/2022/100daysof-day6/)
+- [gradient](https://codepen.io/shooft/pen/YzpVjOw)
+- [intro gradient](https://css-tricks.com/css3-gradients/)
+- [shapes](https://codepen.io/shooft/pen/zYoBXzj)
+- [clip-path](https://davesmyth.com/clip-path-scaling)
+- [intro clip-path](https://ishadeed.com/article/clip-path/)
+- [animation](https://codepen.io/shooft/pen/eYBdvey)
