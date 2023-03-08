@@ -43,6 +43,8 @@ After the workshops and a little bit of research. I find out that you can do tha
 
 What I did was that the box goes up and then you have two other will move from the middle to the side and only a green box will be in the middle. It keep repeating itself.
 
+<img width="1158" alt="Screenshot 2023-03-08 at 12 29 29" src="https://user-images.githubusercontent.com/59873140/223702272-79862b47-09e0-4da7-80ad-a081a8688abb.png">
+
 ---
 # Week 2
 Na de eerste voortganggesprek heb ik meer onderzoek gedaan aan verschillende css technieken die ik kan gebruiken voor mij vuurwerk showcase. Alleen ik moest nog leren hoe ze werken. Dus ik probeer bij elke vakje, een css techniek toepassen en elke keer opbouwen als ik nieuwe dingen leert. 
