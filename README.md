@@ -36,7 +36,15 @@ The options were:
 
 After checking all the options, I went with the *Interactive Firework Show*.
 
-At first, I wanted to make a show with only emoji's. When I was browsering to find all the possibilities, I saw that there were so many things that you can do with CSS. That is why I decide to create a slideshow where I can show different show and technics that I have learn. 
+Techniques that I think I will use for this assigment:
+- Grid
+- Scroll snap
+- Animations
+- Keyframes
+
+At first, I wanted to make a show with only emoji's. When I was browsering to find all the possibilities, I saw that there were so many things that you can do with CSS. That is why I decide to create a slideshow where I can show different show and techniques that I have learn. 
+
+My biggest changelleng will be to not use `id` or `class` in the HTML or CSS.
 
 The first thing that I did was to figure out how to make a slideshow. This is when I find out about `scroll-snap`. After I got that working, I started with the first show. In this show, I wanted to let something move. 
 After the workshops and a little bit of research. I find out that you can do that by making an animation and by using `transform`.
@@ -45,7 +53,7 @@ After the workshops and a little bit of research. I find out that you can do tha
 
 What I did was that the box goes up, and then you have two others will move from the middle to the side and only a green box will be in the middle. It keep repeating itself.
 
- To make an animation in CSS you have to use `keyframes`. With this, you can tell the object what to do at what time.
+To make an animation in CSS you have to use `keyframes`. With this, you can tell the object what to do at what time.
 
 <img width="1158" alt="Screenshot 2023-03-08 at 12 29 29" src="https://user-images.githubusercontent.com/59873140/223702272-79862b47-09e0-4da7-80ad-a081a8688abb.png">
 
