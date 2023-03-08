@@ -114,7 +114,7 @@ In the 4th show I did the show by using `clip-path`
 # Week 4 
 This is the last week of the project. 
 
-My goals for this week is/was to add one last section of firework show. An d do the last final touch ups.
+My goals for this week is/was to add one last section of firework show. And do the last final touch ups.
 
 For the 5th section I wanted to created a realistic firework show with gradient. When I was creating it I got in trouble. the whole show started glitching and I couldn't figure out why. 
 So I meant a branch of the show and created a other show.
@@ -123,6 +123,12 @@ The branch:
 - [Unexpected](https://github.com/RainbowJM/css-to-the-rescue-2223/tree/unexpected)
 ---
 # Reflection
+
+Like I said in the beginning at first I did not know nothing about CSS selectors. All web application that I have made I used `id` and `class`. 
+For me this was a very intersting and eductive. I learned a lot about the CSS selector.
+
+It was very chalanging to only work with CSS selector, but I did it an make something out of it. 
+That works and does what it was intended to.
 
 ---
 
