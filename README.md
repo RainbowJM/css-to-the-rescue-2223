@@ -36,34 +36,38 @@ After checking all the options, I went with the *Interactive Firework Show*.
 
 At first, I wanted to make a show with only emoji's. When I was browsering to find all the possibilities, I saw that there were so many things that you can do with CSS. That is why I decide to create a slideshow where I can show different show and technics that I have learn. 
 
-The first thing that I did was to figure out how to make a slideshow. This is when I find out about `scroll-snap`. After I got that working, I strated with the first show. I this show I wanted to le something move. 
-After the workshops and a little bit of research. I find out that you can do that by making a animation and by using `transform`.
+The first thing that I did was to figure out how to make a slideshow. This is when I find out about `scroll-snap`. After I got that working, I started with the first show. In this show, I wanted to let something move. 
+After the workshops and a little bit of research. I find out that you can do that by making an animation and by using `transform`.
 
 <img width="1164" alt="Screenshot 2023-03-08 at 11 51 59" src="https://user-images.githubusercontent.com/59873140/223696449-250d4fe1-536f-4aa5-9c0b-2f9b7d1adeee.png">
 
-What I did was that the box goes up and then you have two other will move from the middle to the side and only a green box will be in the middle. It keep repeating itself.
+What I did was that the box goes up, and then you have two others will move from the middle to the side and only a green box will be in the middle. It keep repeating itself.
 
- To make a animation in CSS you have to use `keyframes`. With this you can tell the object what to do at what time.
+ To make an animation in CSS you have to use `keyframes`. With this, you can tell the object what to do at what time.
 
 <img width="1158" alt="Screenshot 2023-03-08 at 12 29 29" src="https://user-images.githubusercontent.com/59873140/223702272-79862b47-09e0-4da7-80ad-a081a8688abb.png">
 
 ---
 # Week 2
-One of the workshops I got the idea to make a animated pixel art.
+One of the workshops I got the idea to make an animated pixel art.
 
-For the pixel art I used `box-shadow` to create the heart shape and I used again `keyframes` to animated the colors of the heart shape.
+For the pixel art I used `box-shadow` to create the heart shape and I used again `keyframes` to animate the colors of the heart shape.
 
-Also this week I tried to create e bouncing show of color. When I was making it, SOmething on expeted happend. Because I didn't use the correct CSS Selector, it effected the first two shows also. Check the pictures below.
+Also, this week I tried to create e bouncing show of color. When I was making it, something  unexpected happened. Because I didn't use the correct CSS Selector, it effected the first two shows also. Check the pictures below.
 
+<img width="1122" alt="Screenshot 2023-03-08 at 12 52 51" src="https://user-images.githubusercontent.com/59873140/223706634-44d6ad02-0308-40a1-8400-11feb8282aef.png">
 
+<img width="1119" alt="Screenshot 2023-03-08 at 12 53 11" src="https://user-images.githubusercontent.com/59873140/223706676-c3cc3018-e0b2-420b-83d8-e304b9db2bce.png">
 
+When I updated the CSS Selector for the bouncing show of color, I got another shape than what I was expecting. See below.
 
-## Planning
-- De layout interactiever te maken, door de vakjes te flippen en zie je aan de achterkant een korte beschrijving
-- Motion path animaties toevoegen
-- CSS Gradients toevoege
-- Korte beschrijving onderaan met vuurwerkshow uitleg
-- Ander lettertype zoeken. 
+<img width="1121" alt="Screenshot 2023-03-08 at 12 58 19" src="https://user-images.githubusercontent.com/59873140/223707553-4dfcb71e-93b9-4b01-ba24-18f2a583a40a.png">
+
+<img width="1352" alt="Screenshot 2023-02-16 at 23 48 59" src="https://user-images.githubusercontent.com/59873140/223707845-ed1225d5-997c-4779-b059-9f25d32833bd.png">
+
+<img width="1352" alt="Screenshot 2023-02-16 at 23 49 36" src="https://user-images.githubusercontent.com/59873140/223707932-c2e19c18-8b89-4f31-a8e0-5ecb040f13de.png">
+
+This saw because I didn't use the correct child of the `div` for this show, after a while discovered the error and fixed it.
 
 ---
 # Week 3
