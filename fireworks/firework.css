@@ -91,6 +91,9 @@ section {
 
 }
 
+input[type="checkbox"]{
+    display:none;
+}
 section:nth-of-type(1) form {
     position: absolute;
     bottom: 1em;
@@ -99,6 +102,7 @@ section:nth-of-type(1) form {
 
 section:nth-of-type(1) label {
     color: white;
+    margin: 2px;
 }
 
 section:nth-of-type(1):has(#background:checked) {
